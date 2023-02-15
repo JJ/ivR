@@ -2,7 +2,9 @@
 
 use Digest::MD5;
 
-my @lines = "../IV-21-22/data/fechas-entrega.csv".IO.lines;
+my $file = @*ARGS[0] // "../IV-21-22/data/fechas-entrega.csv";
+
+my @lines = $file.IO.lines;
 
 say @lines.shift;
 
