@@ -34,6 +34,7 @@ date.data <- date.data[order(date.data$Entrega),]
 date.data$entregas <- seq.int(nrow(date.data))
 date.data$Entrega <- NULL
 date.data$Correccion <- NULL
+date.data$entregas <- NULL
 
 estudiantes.aprobados <- date.data[ date.data$Objetivo == 5 & date.data$Incompleto == "Completo",]$Estudiante
 date.data$Aprobado <- date.data$Estudiante %in% estudiantes.aprobados
