@@ -35,5 +35,7 @@ date.data$entregas <- seq.int(nrow(date.data))
 date.data$Entrega <- NULL
 date.data$Correccion <- NULL
 
+estudiantes.aprobados <- date.data[ date.data$Objetivo == 5 & date.data$Incompleto == "Completo",]$Estudiante
+date.data$Aprobado <- date.data$Estudiante %in% estudiantes.aprobados
 save(date.data, file=paste0("data/entregas-",sufijo.fichero,".rda"))
 
