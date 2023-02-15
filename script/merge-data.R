@@ -3,7 +3,7 @@
 library(tidyverse)
 
 load("data/entregas-21-22.rda")
-date.data.2122 <- date.data[!is.na( date.data$superacion),]
+date.data.2122 <- date.data
 load("data/entregas-22-23.rda")
 date.data.2223 <- date.data
 
