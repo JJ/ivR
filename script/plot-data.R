@@ -15,3 +15,13 @@ aprobados <- all.data[ all.data$Aprobado == T,]
 aprobados$Aprobado <- NULL
 p <- c(.5,.75)
 aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+
+objetivo.5 <- all.data[ all.data$Max.Objetivo == 5,]
+p <- c(.5,.75)
+objetivo.5 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+
+objetivo.6 <- all.data[ all.data$Max.Objetivo == 6,]
+objetivo.6 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+
+objetivo.7 <- all.data[ all.data$Max.Objetivo == 7,]
+objetivo.7 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
