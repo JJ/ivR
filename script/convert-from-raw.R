@@ -7,7 +7,6 @@ data.file = "data-raw/fechas-entrega-2021-22.csv"
 fecha.inicial = "2021-09-13T00:00:00+02:00"
 sufijo.fichero = "21-22"
 
-
 if (length(args)>=1) {
   data.file = args[1]
 }
@@ -38,5 +37,13 @@ date.data$entregas <- NULL
 
 estudiantes.aprobados <- date.data[ date.data$Objetivo == 5 & date.data$Incompleto == "Completo",]$Estudiante
 date.data$Aprobado <- date.data$Estudiante %in% estudiantes.aprobados
+
+date.data$Max.Objetivo <- 0
+for (objetivo in 0:9) {
+  estudiantes.alcanzado <- date.data[ date.data$Objetivo == objetivo & date.data$Incompleto == "Completo",]$Estudiante
+  if (length(estudiantes.alcanzado) > 0 ) {
+    date.data[date.data$Estudiante %in% estudiantes.alcanzado, ]$Max.Objetivo <- objetivo
+  }
+}
 save(date.data, file=paste0("data/entregas-",sufijo.fichero,".rda"))
 
