@@ -1,23 +1,23 @@
 {
-  "auth" : "github:JJ",
-  "authors" : ["JJ Merelo"],
-  "depends" : [
-      "IO::Glob",
-      "Text::CSV",
-      "Git::File::History",
-      "JSON::Fast",
-      "Digest"
+  "name": "IV scripts",
+  "description": "Scripts Raku para analizar datos de la asignatura IV",
+  "version": "0.0.2",
+  "perl": "6.d",
+  "meta-version": 1,
+  "authors": [
+    "JJ Merelo"
   ],
-  "description" : "Scripts Raku para analizara datos de la asignatura IV",
-  "license" : "Artistic-2.0",
-  "name" : "IV scripts",
-  "perl" : "6.d",
-  "resources" : [ ],
-  "source-url" : "https://github.com/JJ/ivR.git",
+  "auth": "github:JJ",
+  "depends": [
+    "Text::CSV",
+    "Digest::MD5"
+  ],
   "provides": {},
-  "tags" : [
-    "scripts", "learning analytics"
+  "resources": [],
+  "license": "Artistic-2.0",
+  "tags": [
+    "scripts",
+    "learning analytics"
   ],
-  "version" : "0.0.2",
-  "meta-version": 1
+  "source-url": "https://github.com/JJ/ivR.git"
 }
