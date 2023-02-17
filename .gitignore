@@ -5,3 +5,9 @@
 
 # emacs
 *~
+
+.DS_Store
+
+#Comma
+.idea/
+*.iml
