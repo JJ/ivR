@@ -9,10 +9,16 @@ my @resultados = $file.IO.lines;
 my @procesados;
 for @resultados[1..*] -> $fila {
     my @fila = $fila.split(/\t/);
-    my %fila =  %(aprobado  => @fila[1] >= 4 );
-    my @circunstancias = @fila[3].split(",");
-    for @circunstancias -> $c {
-        %fila{$c} = 1;
+    my %fila =  %(
+                    aprobado  => @fila[1] >= 4,
+                    NoAsistencia => 0,
+                    AsignaturasAtrasadas => 0,
+                    Trabajando => 0
+                );
+    given @fila[3] {
+        when /"No puedo asistir"/ { %fila<NoAsistencia> = 1}
+        when /"asignaturas atrasadas"/ { %fila<AsignaturasAtrasadas> = 1}
+        when /"Estoy trabajando"/ { %fila<Trabajando> = 1}
     }
     @procesados.push: %fila;
 }
