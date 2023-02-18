@@ -20,6 +20,20 @@ circunstancias %>% group_by(Curso,aprobado, Num) %>% summarise(n = n()) %>%
 circunstancias %>% group_by(Curso, Num, aprobado) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
 
+circunstancias %>% group_by(Curso, aprobado, Num) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+
+circunstancias %>% group_by(Curso, Num, aprobado) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+circunstancias %>% group_by(Curso, ConocimientosPrevios, aprobado) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+
+circunstancias %>% group_by(Curso, AsignaturasExigentes, aprobado) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
 circunstancias %>% group_by(aprobado, Num) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
 
@@ -30,3 +44,8 @@ asignaturas.atrasadas <- circunstancias %>% group_by(Curso, AsignaturasAtrasadas
   mutate(freq = n / sum(n))
 
 ggplot(asignaturas.atrasadas,aes(x=Curso,y=freq, fill=AsignaturasAtrasadas))+geom_bar(stat="identity")
+
+falta.base <- circunstancias %>% group_by(Curso, ConocimientosPrevios) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+ggplot(falta.base,aes(x=Curso,y=freq, fill=ConocimientosPrevios))+geom_bar(stat="identity")
