@@ -13,12 +13,19 @@ for @resultados[1..*] -> $fila {
                     aprobado  => @fila[1] >= 4,
                     NoAsistencia => 0,
                     AsignaturasAtrasadas => 0,
-                    Trabajando => 0
+                    Trabajando => 0,
+                    ConocimientosPrevios => 0,
+                    AsignaturasExigentes => 0,
                 );
     given @fila[3] {
         when /"No puedo asistir"/ { %fila<NoAsistencia> = 1}
         when /"asignaturas atrasadas"/ { %fila<AsignaturasAtrasadas> = 1}
         when /"Estoy trabajando"/ { %fila<Trabajando> = 1}
+    }
+
+    given @fila[6] {
+        when /"Conocimientos previos"/ { %fila<ConocimientosPrevios> = 1}
+        when /"trabajo excesiva"/ { %fila<AsignaturasExigentes> = 1}
     }
     @procesados.push: %fila;
 }
