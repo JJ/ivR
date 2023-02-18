@@ -6,7 +6,7 @@ circunstancias.2122 <- read.csv("data-raw/circunstancias-evaluacion-resultados-2
 circunstancias.2223 <- read.csv("data-raw/circunstancias-evaluacion-resultados-22-23.csv")
 
 circunstancias.2122$Curso <- "21-22"
-circunstancias.2223$Curso <- "21-23"
+circunstancias.2223$Curso <- "22-23"
 
 circunstancias <- as_tibble( rbind( circunstancias.2122, circunstancias.2223) )
 
