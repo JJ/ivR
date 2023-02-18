@@ -24,7 +24,7 @@ for @resultados[1..*] -> $fila {
     }
 
     given @fila[6] {
-        when /"Conocimientos previos"/ { %fila<ConocimientosPrevios> = 1}
+        when /"conocimientos previos"/ { %fila<ConocimientosPrevios> = 1}
         when /"trabajo excesiva"/ { %fila<AsignaturasExigentes> = 1}
     }
     @procesados.push: %fila;
