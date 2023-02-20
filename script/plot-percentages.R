@@ -14,7 +14,8 @@ circunstancias %>% group_by(Curso,AsignaturasAtrasadas,aprobado) %>% summarise(n
 asignaturas.atrasadas.aprobado <- circunstancias %>% group_by(Curso, AsignaturasAtrasadas,aprobado) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
 
-ggplot(asignaturas.atrasadas.aprobado,aes(x=Curso,y=freq, fill=AsignaturasAtrasadas, color=aprobado))+geom_bar(stat="identity")
+ggplot(asignaturas.atrasadas.aprobado[asignaturas.atrasadas.aprobado$aprobado=="True",],aes(x=Curso,y=freq, fill=AsignaturasAtrasadas))+geom_bar(stat="identity")
+ggplot(asignaturas.atrasadas.aprobado[asignaturas.atrasadas.aprobado$aprobado=="False",],aes(x=Curso,y=freq, fill=AsignaturasAtrasadas))+geom_bar(stat="identity")
 
 circunstancias %>% group_by(Curso,aprobado, NoAsistencia) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
