@@ -8,6 +8,14 @@ load("data/circunstancias.rda")
 circunstancias %>% group_by(Curso,aprobado,AsignaturasAtrasadas) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
 
+circunstancias %>% group_by(Curso,AsignaturasAtrasadas,aprobado) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+asignaturas.atrasadas.aprobado <- circunstancias %>% group_by(Curso, AsignaturasAtrasadas,aprobado) %>% summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
+ggplot(asignaturas.atrasadas.aprobado,aes(x=Curso,y=freq, fill=AsignaturasAtrasadas, color=aprobado))+geom_bar(stat="identity")
+
 circunstancias %>% group_by(Curso,aprobado, NoAsistencia) %>% summarise(n = n()) %>%
   mutate(freq = n / sum(n))
 
