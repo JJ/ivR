@@ -13,8 +13,8 @@ wilcox.test( all.data[ all.data$Aprobado == T,]$superacion,all.data[ all.data$Ap
 
 aprobados <- all.data[ all.data$Aprobado == T,]
 aprobados$Aprobado <- NULL
-p <- c(.5,.75)
-aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+p <- c(.5,.75,.9,1)
+tabla.dias.entregas <- aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
 
 objetivo.5 <- all.data[ all.data$Max.Objetivo == 5,]
 p <- c(.5,.75)
