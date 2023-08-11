@@ -16,6 +16,9 @@ aprobados$Aprobado <- NULL
 p <- c(.5,.75,.9,1)
 tabla.dias.entregas <- aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
 
+all.data$Objetivo <- as.factor(all.data$Objetivo)
+ggplot(all.data, aes(x=Objetivo,y=entrega.Dias))+geom_boxplot(notch=T)
+
 objetivo.5 <- all.data[ all.data$Max.Objetivo == 5,]
 p <- c(.5,.75)
 objetivo.5 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
