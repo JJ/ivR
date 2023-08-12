@@ -2,7 +2,7 @@
 
 library(tidyverse)
 library(ggplot2)
-
+library(ggthemes)
 load("data/all-data.rda")
 
 ggplot(all.data, aes(x=Aprobado,y=superacion))+geom_boxplot(notch=T)+ylim(0,30)
@@ -17,7 +17,8 @@ p <- c(.5,.75,.9,1)
 tabla.dias.entregas <- aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
 
 all.data$Objetivo <- as.factor(all.data$Objetivo)
-ggplot(all.data, aes(x=Objetivo,y=entrega.Dias))+geom_boxplot(notch=T)
+
+ggplot(all.data, aes(x=Objetivo,y=Entrega.Semana))+geom_boxplot(notch=T)+theme_economist()+ylim(0,20)
 
 objetivo.5 <- all.data[ all.data$Max.Objetivo == 5,]
 p <- c(.5,.75)
