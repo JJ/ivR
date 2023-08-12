@@ -23,7 +23,7 @@ ggplot(all.data, aes(x=Objetivo,y=Entrega.Semana))+geom_boxplot(notch=T)+geom_ji
 superados <- all.data[!is.na(all.data$Correccion.Semana),]
 superados$superacion.Semana <- superados$superacion/7
 
-ggplot(superados, aes(x=Objetivo,y=superacion.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,5)
+ggplot(superados, aes(x=Objetivo,y=superacion.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,4)
 
 ggplot(all.data, aes(x=Objetivo,y=Correccion.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,20)
 
