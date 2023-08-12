@@ -18,7 +18,14 @@ tabla.dias.entregas <- aprobados %>% group_by(Objetivo) %>% dplyr::summarize(por
 
 all.data$Objetivo <- as.factor(all.data$Objetivo)
 
-ggplot(all.data, aes(x=Objetivo,y=Entrega.Semana))+geom_boxplot(notch=T)+theme_economist()+ylim(0,20)
+ggplot(all.data, aes(x=Objetivo,y=Entrega.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,20)
+
+superados <- all.data[!is.na(all.data$Correccion.Semana),]
+superados$superacion.Semana <- superados$superacion/7
+
+ggplot(superados, aes(x=Objetivo,y=superacion.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,5)
+
+ggplot(all.data, aes(x=Objetivo,y=Correccion.Semana))+geom_boxplot(notch=T)+geom_jitter(aes(color=curso))+theme_economist()+ylim(0,20)
 
 objetivo.5 <- all.data[ all.data$Max.Objetivo == 5,]
 p <- c(.5,.75)
