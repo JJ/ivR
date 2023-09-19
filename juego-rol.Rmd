@@ -46,7 +46,19 @@ Si lo comparamos con los estudiantes del año pasado, como control adicional, el
 
 En general, quien supera el objetivo lo supera a la primera, aunque hay alguna excepción. En todo caso, e incluso con los datos preliminares, podemos intentar aventurar algunas conclusiones.
 
-## 
+## Discusión, conclusiones y trabajo futuro
+
+Antes de introducir un juego de rol para llevar a cabo la fase de empatía dentro de un proceso de *design thinking*, simplemente se mencionaba el proceso y los estudiantes lo hacían por su cuenta, lo que en general significaba que *no* hacían nada, leyendo la descripción del requisito del objetivo 0 y llegando a superarlo a base de muchas iteraciones de corrección por parte del profesor, en un proceso de evaluación formativa. Eso resultaba, aparte del empleo de un tiempo considerable, retraso en abordar el resto de los objetivos y también abandono por parte de los estudiantes, que no eran capaces ni siquiera de comenzar con el tema del proyecto.
+
+En general, cualquier actividad que haga que los estudiantes se involucren con los objetivos de aprendizaje va a ser positiva. En años anteriores, por ejemplo, se ha hecho un hackatón y se ha visto que los estudiantes asimilan mejor poniendo en práctica los conceptos importantes, antes de usarlos para aplicarlos a su propio proyecto y alcanzar los objetivos de aprendizaje correspondientes. En este caso los propios estudiantes han calificado la actividad como positiva, independientemente de su resultado inmediato y a corto plazo, así que sin duda ha mejorado la visión de la asignatura y del aprendizaje en la misma.
+
+Ese efecto, sin embargo, se tiene que medir en el alcance individual de los objetivos de aprendizaje, y de qué manera ayuda. Los resultados iniciales muestran que la mayoría de los estudiantes, una vez superados los obstáculos que suponen enviar el resultado del objetivo (para lo cual tienen que usar GitHub y demostrar también su pericia en el uso de GitHub y git), llegan a la entrega con más celeridad que en años anteriores; también superan el objetivo en mayor porcentaje que en años anteriores. La comparación entre las personas que participaron en el juego de rol y las que no lo hicieron es posiblemente injusta, ya que tampoco asistieron a clase, pero en todo caso entre estos últimos el porcentaje de éxito a 5 días vista es de cero.
+
+Sin duda, esto abre una serie de vías para trabajo futuro. El principal problema, desde el punto de vista de la asignatura, es qué hacer con las personas cuyo problema formulado no ha superado el juego; aunque se hizo una segunda ronda, los números de las personas que no lo pasaron parecen coincidir con los que no han superado por el momento el objetivo. Un segundo problema es que en el momento que el problema, esté validado o no, se evalúa por parte del profesor, si no es válido no está claro que se puedan aplicar los principios de *design thinking* o el estudiante no tiene claro cómo hacerlo. Sería conveniente tratar de enfocar el juego de forma que esa fase de empatía la pudiera aplicar en iteraciones sucesivas, sin necesidad de otra persona o de hacerlo varias veces en clase, con los inconvenientes que ello puede causar; si no ha tenido éxito la primera vez, repetir el juego puede ser un poco frustrante. Añadir una fase de "ideación", quizás opcional, como es habitual en *design thinking*, podría ayudar con todo ello, y se mantendría dentro del marco de un juego de rol.
+
+También convendría evaluar los resultados a más largo plazo, y cómo influye en el resultado final alcanzado por el estudiante. Evidentemente, dado que la experiencia se ha hecho este curso, esto queda como trabajo futuro.
+
+
 
 
 
