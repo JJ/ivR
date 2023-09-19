@@ -16,3 +16,6 @@
 *.docx
 *.docx#
 *.html
+
+# Latex (creo)
+auto/
