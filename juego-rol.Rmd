@@ -1,0 +1,63 @@
+---
+title: "Juegos de rol para design thinking en enseñanza basada en proyecto"
+author: "JJ Merelo"
+date: "`r Sys.Date()`"
+output: word_document
+abstract: |
+  La enseñanza basada en proyecto se debe basar en aprender las diferentes metodologías aplicables en diferentes fases del desarrollo del mismo. En la fase inicial de diseño del proyecto, *design thinking* es una de las metodologías más aceptadas. Para aprender esa metodología se ha diseñado un juego de rol y se ha hecho una experiencia en la asignatura Infraestructura Virtual del grado en Ingeniería Informática. En este trabajo trataremos de exponer en qué ha consistido la experiencia y los resultados, todavía iniciales, obtenidos.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introducción
+
+ Uno de los problemas principales en la asignatura que imparto en cuarto de Informática es el tratar de convencer a los estudiantes que lo que sea que aprendan va a serles útil en su vida profesional, e incluso en el resto de las asignaturas o el trabajo fin de grado.
+
+Que eso suceda así es consecuencia de muchas cosas, muchas de las cuales denuncié en esta carta abierta, pero una cosa es denunciar y otra dar trigo, así que hay que poner algo de mi parte para poder motivar, pero lo principal es que entiendan la realidad de los contenidos que se tratan de impartir.
+Un poco de contexto
+
+En la asignatura uso aprendizaje basado en proyecto y evaluación formativa; esencialmente los estudiantes tienen que ir elaborando un proyecto propio, alcanzando diferentes objetivos a lo largo del curso; la retroalimentación del profesor y de otros estudiantes les debe ayudar a alcanzarlos.
+
+El problema es que en cada uno de esos objetivos, la preocupación principal del estudiante es "qué hay que poner ahí" y no qué conceptos hay que entender para poder superar el objetivo. Y es así porque es casi imposible transmitir la idea de que esos conceptos son reales, útiles y basados en las mejores prácticas de la industria. La realidad del proyecto es lo más complicado de transmitir, y salvo que se produzca una epifanía, prácticamente imposible de enseñar. Y eso lleva al fracaso.
+
+Empezando por el primer objetivo, en realidad objetivo 0, que es que entiendan que la ingeniería resuelve problemas, y que para poder cerciorarse de que efectivamente se ha resuelto el problema, el estudiante debe estar familiarizado con el mismo, debe ser un problema propio o de algún familiar cercano, o uno en el que realmente tenga interés. Si no tiene interés, o, volviendo al principio, se convierte en "algo que poner ahí pero que no tiene nada que ver con nada" en vez de un problema real que hay que modelizar y posteriormente tratar de abordar mediante un programa informático, no sirve absolutamente de nada.
+Introduciendo Design Thinking
+
+Design thinking es una metodología para desarrollar productos desde cero. En el objetivo 0 se les anima a que conozcan y usen esa metodología para definir el problema con el que se va a trabajar, a través de la fase inicial, de empatía, que es fundamental para identificar al cliente y qué es lo que necesita de la aplicación.
+
+Por supuesto, esos enlaces no le sirven de nada al estudiante. No les importa mucho formular el problema o aprender a formularlo. Al final, algunos acaban superando el objetivo 0 a base de múltiples revisiones (de eso va la evaluación formativa) y explicaciones por parte mía; algunos simplemente lo dejan o no llegan ni siquiera a entregar este objetivo. Pero todo ello acaba siendo poco práctico, y sobre todo, no proporciona esa epifanía que hace que el estudiante entienda la realidad del problema, y por tanto del proyecto, y por tanto del valor que le puede aportar la asignatura.
+
+En algunos casos, además, hay estudiantes que son incapaces de superar ese primer objetivo simplemente porque son incapaces de pensar en un problema a resolver, o de formular un problema que sea mínimamente real y por tanto la base para la construcción de una aplicación.
+Introduciendo un juego de rol
+
+Empatizar es literalmente ponerse en los zapatos de otra persona, el cliente en este caso, que tiene un problema, y entender cuál es el problema. La metodología de design thinking identifica muy bien la clave de diseñar un producto con éxito: si no entiendes a tu cliente, es imposible. Pero desde el punto de vista informático, si no lo entiendes no puedes formular correctamente historias de usuario, y no puedes crear a partir de ellas tests que efectivamente comprueben que se ha resuelto el problema.
+
+Desde el punto de vista de la asignatura y de la enseñanza, empatizar debería proporcionar esa epifanía que vamos buscando. Al ponerte en los zapatos de tu cliente, entiendes que el problema que tiene es real y vas a intentar hacer lo posible para solucionarlo.
+
+Con esos ejes, la empatía y la realidad, me he puesto a diseñar un mini-juego de rol que ayude al estudiante a formular el problema que va a tratar en la asignatura.
+
+    En unos días sabremos el resultado. Mientras tanto quiero dejar aquí bien claro el planteamiento del mismo, para mi y para quien le sirva. 
+
+He intentado buscar alguno ya prediseñado que pueda usar, pero no lo he encontrado. Pero animado por The revenge of Analog, un préstamo de Fernando Tricas García, he decidido hacerlo lo más real posible, usando fichas de verdad.
+
+En este juego de rol, hay un cliente que tiene un problema y un dev que le quiere ayudar a desarrollar ese problema.
+
+El cliente usará esta ficha para escribir, a mano, cuál es su problema. De esta forma se anima al estudiante a esforzarse en formular el problema de forma que lo entienda otra persona, pero a la vez asumirá el rol del cliente, de forma que tiene que empatizar con él para poder saber qué es lo que quiere. A la vez, separamos el problema de la posible solución (algo que es muy complicado hacer entender también), para que se centren en qué es lo que hay que solucionar, no en la solución.
+
+El entrevistador/desarrollador/a usará esta ficha, para resumir cuál es el problema que se quiere resolver; al confrontar el problema con otra persona (aparte del profesor) el estudiante tendrá que esforzarse en convencer que realmente se trata de un problema. El dev o entrevistador, a la vez, podrá darle una retroalimentación temprana de si es un problema o no que pueda resolverse con un programa en la nube (en una segunda fase del juego).
+
+Como hemos comentado, también hay casos en que el estudiante no sabe formular ningún problema. En ese caso, el entrevistador le ayudará a encontrar alguno usando esta ficha, de forma que pueda más o menos sacar alguna cosa que puedan resolver en la asignatura.
+
+Las fichas se imprimirán en papel, y se le entregarán a cada uno de los estudiantes, que tendrán que escribir preferiblemente en bolígrafo. Una vez escrito, tendrán que entregar el objetivo de la forma habitual. 
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
