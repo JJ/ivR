@@ -26,74 +26,12 @@ En el guión del objetivo se les animaba a usar *design thinking* [@flores2019in
 
 Aunque no es de ningún modo habitual en educación superior, el uso de juegos de rol [@toth15,@hammer2018learning] ha recibido cierta atención en los últimos años, sobre todo desde la popularidad de los mismos en la población en general. En este caso es especialmente apropiado: queremos que el estudiante asuma *el rol* de su cliente, con lo que vamos a basarlo exactamente en eso: empatizar es literalmente ponerse en los zapatos de otra persona, el cliente en este caso, que tiene un problema, y entender cuál es el problema. Desde el punto de vista de la asignatura y de la enseñanza, empatizar debería proporcionar esa epifanía que vamos buscando. Al ponerte en los zapatos de tu cliente, entiendes que el problema que tiene es real y vas a intentar hacer lo posible para entenderlo, expresarlo y solucionarlo.
 
-En este juego de rol, por lo tanto, hay un cliente con un problema y una persona de un equipo de desarrollo que le quiere ayudar a solucionar ese problema mediante un desarrollo informático.
+En este juego de rol, por lo tanto, hay un cliente con un problema y una persona de un equipo de desarrollo que le quiere ayudar a solucionar ese problema mediante un desarrollo informático; dos roles diferenciados. El cliente usará una ficha física para escribir cuál es su problema, con lo que se anima al estudiante a esforzarse en formular el problema de forma que lo entienda otra persona, pero a la vez asumirá el rol del cliente, de forma que tiene que empatizar con él para poder saber qué es lo que quiere. A la vez, separamos el problema de la posible solución (algo que es muy complicado hacer entender también), para que se centren en qué es lo que hay que solucionar, no en la solución, que teóricamente tendría que abordar el equipo de desarrollo; este usará otra ficha para resumir cuál es el problema que se quiere resolver; al confrontar el problema con otra persona el estudiante tendrá que esforzarse en convencer que realmente se trata de un problema. El dev o entrevistador, a la vez, podrá darle una retroalimentación temprana de si es un problema o no que pueda resolverse con un programa en la nube (en una segunda fase del juego), y solicitarle aclaraciones en caso de que no se entienda lo suficiente. Si no se puede formular ningún problema, el entrevistador le ayudará a encontrar alguno usando otra ficha, de forma que pueda más o menos sacar alguna cosa que puedan resolver en la asignatura.
 
-El cliente usará esta ficha para escribir, a mano, cuál es su problema. De esta forma se anima al estudiante a esforzarse en formular el problema de forma que lo entienda otra persona, pero a la vez asumirá el rol del cliente, de forma que tiene que empatizar con él para poder saber qué es lo que quiere. A la vez, separamos el problema de la posible solución (algo que es muy complicado hacer entender también), para que se centren en qué es lo que hay que solucionar, no en la solución.
-
-El entrevistador/desarrollador/a usará esta ficha, para resumir cuál es el problema que se quiere resolver; al confrontar el problema con otra persona (aparte del profesor) el estudiante tendrá que esforzarse en convencer que realmente se trata de un problema. El dev o entrevistador, a la vez, podrá darle una retroalimentación temprana de si es un problema o no que pueda resolverse con un programa en la nube (en una segunda fase del juego).
-
-Como hemos comentado, también hay casos en que el estudiante no sabe formular ningún problema. En ese caso, el entrevistador le ayudará a encontrar alguno usando esta ficha, de forma que pueda más o menos sacar alguna cosa que puedan resolver en la asignatura.
-
-Las fichas se imprimirán en papel, y se le entregarán a cada uno de los estudiantes, que tendrán que escribir preferiblemente en bolígrafo. Una vez escrito, tendrán que entregar el objetivo de la forma habitual. 
+El juego tiene tres fases: primero, cada estudiante escribe el problema en una ficha, en unos 10 minutos. En la segunda fase, se forman parejas sin ningún criterio y en la misma clase, van pasando por los dos roles cada persona de la pareja. Cuando han terminado, se crean nuevas parejas para pasar a la fase de validación. El resultado final será un problema validado (y que por tanto se podría usar en el objetivo 0 por parte del estudiante) o no.
 
 ## Desarrollo del juego
 
-Los estudiantes se organizan en parejas, y deciden quién va a ser
-estudiante A y estudiante B. El estudiante A *planteará el problema* y
-el estudiante B *tratará de comprenderlo y a continuación, lo resumirá*.
-
-1. Los
-estudiantes, organizados por parejas, tienen 5 minutos para escribir,
-preferiblemente en papel y con bolígrafo, los problemas que conocen y
-que piensan que pueden abordar mediante un programa. El énfasis es en
-que piensen en *los problemas*, no la solución. </td></tr>
-<tr><td> <strong>Opción 1</strong> <strong>15 minutos</strong> Asume
-el rol de la persona *que tiene el problema*; le contará
-primero quién o qué es ("Soy un gerente de una empresa de envase de
-frutas", "Soy un estudiante que quiere comer sano", "Soy una persona
-mayor que quiere organizar mejor el tiempo de ejercicio") qué es lo
-que ocurre, qué es lo que querría hacer mejor, o hacer, o hacer de
-otra manera, usando si es necesario papel y lápiz para mostrarle a B
-como hace las cosas y qué problema hay con las mismas. Tomará notas de
-las preguntas adicionales o con las aclaraciones que tenga que hacer
-sobre el problema inicial. Al final de este proceso, se invertirán los
-roles de estudiante A y estudiante B. El Estudiante B será un desarrollador que actúa como entrevistador y que
-quiere entender qué necesita: tiene que empezar por preguntarle "¿En
-qué puedo ayudarte?" o "¿Qué problema tenemos entremanos?". A
-continuación, le hará las preguntas necesarias para entender bien qué
-es lo que necesita, absteniéndose de formular ningún tipo de solución
-posible y tomará notas. Al final de los 15 minutos, consultando si es
-necesario las notas, le resumirá al estudiante A (el *cliente*)
-lo que ha entendido. También le dará una valoración de si entiende que
-se podría resolver dentro de una asignatura como IV, de
-infraestructura virtual. Al final de este proceso, se invertirán los
-roles de estudiante A y estudiante B. 
-
-2. Puede que el Estudiante A
-no haya tenido tiempo de formular ninguna idea en los 5
-    minutos anteriores, o no tiene ninguna idea clara. Al final de los
-    15 minutos, con la ayuda del estudiante B, tendrá que plantear el
-    problema que luego enviará para el objetivo 0. Tendrá que intentar ayudarle
-a formular ese problema, haciéndole preguntas (escritas en la ficha) que le ayude a encontrar ese problema.
-Eventualmente tendrán
-que intentar entre los dos formular el problema que el estudiante A
-podrá plantear en la asignatura. A continuación, el estudiante A será ahora
-estudiante B, y viceversa, y llevarán a cabo una de las dos opciones
-anteriores.
-
-3. *Validación*: en 10 minutos se establacen nuevas parejas, y una vez más
-estudiante A volverá a asumir el rol del posible cliente y contar qué
-problema tiene con las modificaciones que haya hecho en la interacción
-anterior; una vez más el estudiante B será entrevistador, hará
-preguntas y solicitará aclaraciones, y al final validará (o no) el
-problema planteado como un problema que podría ser válido para la
-asignatura. Si el estudiante B no valida el problema para la
-     asignatura, se volverá al paso anterior de formulación del
-     problema en el tiempo que permita la clase, con la temporización
-     necesaria y creando parejas entre las personas que no se hayan
-     validado. El estudiante B le entregará al A la ficha con lo que
-     ha impedido la validación, para que lleve a cabo otra iteración
-     del mismo o plantee un problema diferente.
 
 
 ## Referencias
