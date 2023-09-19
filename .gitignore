@@ -11,3 +11,6 @@
 #Comma
 .idea/
 *.iml
+
+# Generados
+*.docx
