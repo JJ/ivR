@@ -3,13 +3,14 @@ title: "Juegos de rol para design thinking en enseñanza basada en proyecto"
 author: "JJ Merelo"
 date: "`r Sys.Date()`"
 output: word_document
-abstract: |
-  La enseñanza basada en proyecto se debe basar en aprender las diferentes metodologías aplicables en diferentes fases del desarrollo del mismo. En la fase inicial de diseño del proyecto, *design thinking* es una de las metodologías más aceptadas. Para aprender esa metodología se ha diseñado un juego de rol y se ha hecho una experiencia en la asignatura Infraestructura Virtual del grado en Ingeniería Informática. En este trabajo trataremos de exponer en qué ha consistido la experiencia y los resultados, todavía iniciales, obtenidos.
+abstract: La enseñanza basada en proyecto se debe basar en aprender las diferentes
+  metodologías aplicables en diferentes fases del desarrollo del mismo. En la fase
+  inicial de diseño del proyecto, design thinking es una de las metodologías más aceptadas.
+  Para aprender esa metodología se ha diseñado un juego de rol y se ha hecho una experiencia
+  en la asignatura Infraestructura Virtual del grado en Ingeniería Informática. En
+  este trabajo trataremos de exponer en qué ha consistido la experiencia y los resultados,
+  todavía iniciales, obtenidos.
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Introducción
 
@@ -54,19 +55,13 @@ Los estudiantes se organizan en parejas, y deciden quién va a ser
 estudiante A y estudiante B. El estudiante A *planteará el problema* y
 el estudiante B *tratará de comprenderlo y a continuación, lo resumirá*.
 
-<table>
-  <thead>
-    <th> Estudiante A </th><th> Estudiante B </th>
-  </thead>
-
-  <tbody>
-<tr><td colspan="2"> <strong>5 minutos</strong> Los
+1. Los
 estudiantes, organizados por parejas, tienen 5 minutos para escribir,
 preferiblemente en papel y con bolígrafo, los problemas que conocen y
 que piensan que pueden abordar mediante un programa. El énfasis es en
-que piensen en <em>los problemas</em>, no la solución. </td></tr>
+que piensen en *los problemas*, no la solución. </td></tr>
 <tr><td> <strong>Opción 1</strong> <strong>15 minutos</strong> Asume
-el rol de la persona <em>que tiene el problema</em>; le contará
+el rol de la persona *que tiene el problema*; le contará
 primero quién o qué es ("Soy un gerente de una empresa de envase de
 frutas", "Soy un estudiante que quiere comer sano", "Soy una persona
 mayor que quiere organizar mejor el tiempo de ejercicio") qué es lo
@@ -75,52 +70,31 @@ otra manera, usando si es necesario papel y lápiz para mostrarle a B
 como hace las cosas y qué problema hay con las mismas. Tomará notas de
 las preguntas adicionales o con las aclaraciones que tenga que hacer
 sobre el problema inicial. Al final de este proceso, se invertirán los
-roles de estudiante A y estudiante B.</td>
-<td>Es un entrevistador que
+roles de estudiante A y estudiante B. El Estudiante B será un desarrollador que actúa como entrevistador y que
 quiere entender qué necesita: tiene que empezar por preguntarle "¿En
 qué puedo ayudarte?" o "¿Qué problema tenemos entremanos?". A
 continuación, le hará las preguntas necesarias para entender bien qué
 es lo que necesita, absteniéndose de formular ningún tipo de solución
 posible y tomará notas. Al final de los 15 minutos, consultando si es
-necesario las notas, le resumirá al estudiante A (el <em>cliente</em>)
+necesario las notas, le resumirá al estudiante A (el *cliente*)
 lo que ha entendido. También le dará una valoración de si entiende que
 se podría resolver dentro de una asignatura como IV, de
 infraestructura virtual. Al final de este proceso, se invertirán los
-roles de estudiante A y estudiante B.  </td> </tr>
+roles de estudiante A y estudiante B. 
 
-<tr>
-    <td><strong>Opción 2</strong> <strong>15 minutos</strong>
-Puede
-    que no haya tenido tiempo de formular ninguna idea en los 5
+2. Puede que el Estudiante A
+no haya tenido tiempo de formular ninguna idea en los 5
     minutos anteriores, o no tiene ninguna idea clara. Al final de los
     15 minutos, con la ayuda del estudiante B, tendrá que plantear el
-    problema que luego enviará para el objetivo 0.
-    </td>
-
-   <td>Tendrá que intentar ayudarle
-a formular ese problema, haciéndole preguntas como <ol> <li>¿Alguna
-afición podría mejorar con ayuda de algún programa?</li> <li> ¿Alguna
-tarea doméstica o el conjunto de las mismas en su vivienda podrían ser
-algún problema? ¿O la organización de las mismas?</li> <li>¿Alguna
-preocupación social o política podría ser un problema mejorable con
-alguna aplicación?</li> <li> ¿Hay algún dato que se pueda procesar a
-partir de fuentes poco estructuradas? ¿Ofertas de algo?  ¿Información
-de alguna página de una institución?</li> </ol> Eventualmente tendrán
+    problema que luego enviará para el objetivo 0. Tendrá que intentar ayudarle
+a formular ese problema, haciéndole preguntas (escritas en la ficha) que le ayude a encontrar ese problema.
+Eventualmente tendrán
 que intentar entre los dos formular el problema que el estudiante A
-podrá plantear en la asignatura.  </td>
-</tr>
-
-<tr>
-    <td
-colspan="2"><strong>15 minutos</strong>Estudiante A será ahora
+podrá plantear en la asignatura. A continuación, el estudiante A será ahora
 estudiante B, y viceversa, y llevarán a cabo una de las dos opciones
 anteriores.
-    </td>
-</tr>
 
-<tr>
-     <td colspan="2"><em>Validación</em>
-<strong>10 minutos</strong>: se establacen nuevas parejas, y una vez más
+3. *Validación*: en 10 minutos se establacen nuevas parejas, y una vez más
 estudiante A volverá a asumir el rol del posible cliente y contar qué
 problema tiene con las modificaciones que haya hecho en la interacción
 anterior; una vez más el estudiante B será entrevistador, hará
@@ -133,12 +107,4 @@ asignatura. Si el estudiante B no valida el problema para la
      validado. El estudiante B le entregará al A la ficha con lo que
      ha impedido la validación, para que lleve a cabo otra iteración
      del mismo o plantee un problema diferente.
-     </td>
-</tr>
 
-<tr><td colspan="2"> <em>Puesta en común</em>: la clase dirá qué ha
-    aprendido de la experiencia, y sugerirá mejoras para iteraciones
-    sucesivas.  </td> </tr>
-
-</tbody>
-</table>
