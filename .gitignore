@@ -14,3 +14,5 @@
 
 # Generados
 *.docx
+*.docx#
+*.html
