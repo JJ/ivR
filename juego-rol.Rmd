@@ -3,6 +3,7 @@ title: "Juegos de rol para design thinking en enseñanza basada en proyecto"
 author: "JJ Merelo"
 date: "`r Sys.Date()`"
 output: word_document
+bibliography: rpg.bib
 abstract: La enseñanza basada en proyecto se debe basar en aprender las diferentes
   metodologías aplicables en diferentes fases del desarrollo del mismo. En la fase
   inicial de diseño del proyecto, design thinking es una de las metodologías más aceptadas.
@@ -14,32 +15,18 @@ abstract: La enseñanza basada en proyecto se debe basar en aprender las diferen
 
 ## Introducción
 
- Uno de los problemas principales en la asignatura que imparto en cuarto de Informática es el tratar de convencer a los estudiantes que lo que sea que aprendan va a serles útil en su vida profesional, e incluso en el resto de las asignaturas o el trabajo fin de grado.
+Uno de los problemas principales en la asignatura Infraestructura Virtual del plan de estudios oficial del grado en Ingeniería Informática es el tratar de convencer a los estudiantes que lo que sea que aprendan va a serles útil en su vida profesional; que la asignatura pretende que aprendan a aplicar una serie de metodologías que son las habituales en casi cualquier puesto de trabajo en Informática. Desde hace tiempo, en la asignatura uso aprendizaje basado en proyecto y evaluación formativa; esencialmente los estudiantes tienen que ir elaborando un proyecto propio, alcanzando diferentes objetivos a lo largo del curso, sin fecha fija de entrega más que la necesidad de alcanzar un objetivo determinado para aprobar el curso; la retroalimentación del profesor y de otros estudiantes les debe ayudar a alcanzarlos.
 
-Que eso suceda así es consecuencia de muchas cosas, muchas de las cuales denuncié en esta carta abierta, pero una cosa es denunciar y otra dar trigo, así que hay que poner algo de mi parte para poder motivar, pero lo principal es que entiendan la realidad de los contenidos que se tratan de impartir.
-Un poco de contexto
+El problema es que en cada uno de esos objetivos, la preocupación principal del estudiante es "qué hay que poner ahí", escribir lo que creen que el profesor quiere leer, y no qué conceptos hay que entender o qué metodologías hay que usar para poder superar el objetivo. Y es así porque es casi imposible transmitir la idea de que esos conceptos son reales, útiles y basados en las mejores prácticas de la industria. La *realidad* del proyecto que van a llevar a cabo a lo largo de la asignatura es lo más complicado de transmitir, y salvo que se produzca una epifanía, prácticamente imposible de enseñar. Empezando por el primer objetivo, que pretende que entiendan que la ingeniería resuelve problemas, y que para poder cerciorarse de que efectivamente se ha resuelto el problema, el estudiante debe estar familiarizado con el mismo, debe ser un problema propio o de algún familiar cercano, o uno en el que realmente tenga interés. Si no tiene interés, o, volviendo al principio, se convierte en "algo que poner ahí pero que no tiene nada que ver con nada" en vez de un problema real que hay que modelizar y posteriormente tratar de abordar mediante un programa informático, no sirve absolutamente de nada; en vez de consultar las metodologías propuestas, aplicarlas y a partir de ellas describir el problema, simplemente ponen lo primero que se les ocurre y que creen que puede *colar* para este objetivo concreto, sin ni siquiera pensar en el resto de los objetivos, con los cuales tendrían que vivir tratando de resolver ese problema.
 
-En la asignatura uso aprendizaje basado en proyecto y evaluación formativa; esencialmente los estudiantes tienen que ir elaborando un proyecto propio, alcanzando diferentes objetivos a lo largo del curso; la retroalimentación del profesor y de otros estudiantes les debe ayudar a alcanzarlos.
 
-El problema es que en cada uno de esos objetivos, la preocupación principal del estudiante es "qué hay que poner ahí" y no qué conceptos hay que entender para poder superar el objetivo. Y es así porque es casi imposible transmitir la idea de que esos conceptos son reales, útiles y basados en las mejores prácticas de la industria. La realidad del proyecto es lo más complicado de transmitir, y salvo que se produzca una epifanía, prácticamente imposible de enseñar. Y eso lleva al fracaso.
+En el guión del objetivo se les animaba a usar *design thinking* [@flores2019innovacion], una metodología para desarrollar productos desde cero. La fase relevante del mismo es la de empatía, que es fundamental para identificar al cliente, su problema, y por tanto qué es lo que necesita de la aplicación; sin embargo, era un primer objetivo en el que ya un porcentaje considerable de la clase se quedaba atrancado. En el curso 22-23, casi un 20% de los estudiantes no entregó o no superó este objetivo; en el curso anterior, fue un 10%. Eso me llevó a intentar un nuevo acercamiento, más allá de la mención en el objetivo del uso del mismo.
 
-Empezando por el primer objetivo, en realidad objetivo 0, que es que entiendan que la ingeniería resuelve problemas, y que para poder cerciorarse de que efectivamente se ha resuelto el problema, el estudiante debe estar familiarizado con el mismo, debe ser un problema propio o de algún familiar cercano, o uno en el que realmente tenga interés. Si no tiene interés, o, volviendo al principio, se convierte en "algo que poner ahí pero que no tiene nada que ver con nada" en vez de un problema real que hay que modelizar y posteriormente tratar de abordar mediante un programa informático, no sirve absolutamente de nada.
-Introduciendo Design Thinking
+## Introduciendo un juego de rol
 
-Design thinking es una metodología para desarrollar productos desde cero. En el objetivo 0 se les anima a que conozcan y usen esa metodología para definir el problema con el que se va a trabajar, a través de la fase inicial, de empatía, que es fundamental para identificar al cliente y qué es lo que necesita de la aplicación.
+Aunque no es de ningún modo habitual en educación superior, el uso de juegos de rol [@toth15,@hammer2018learning] ha recibido cierta atención en los últimos años, sobre todo desde la popularidad de los mismos en la población en general. En este caso es especialmente apropiado: queremos que el estudiante asuma *el rol* de su cliente, con lo que vamos a basarlo exactamente en eso: empatizar es literalmente ponerse en los zapatos de otra persona, el cliente en este caso, que tiene un problema, y entender cuál es el problema. Desde el punto de vista de la asignatura y de la enseñanza, empatizar debería proporcionar esa epifanía que vamos buscando. Al ponerte en los zapatos de tu cliente, entiendes que el problema que tiene es real y vas a intentar hacer lo posible para entenderlo, expresarlo y solucionarlo.
 
-Por supuesto, esos enlaces no le sirven de nada al estudiante. No les importa mucho formular el problema o aprender a formularlo. Al final, algunos acaban superando el objetivo 0 a base de múltiples revisiones (de eso va la evaluación formativa) y explicaciones por parte mía; algunos simplemente lo dejan o no llegan ni siquiera a entregar este objetivo. Pero todo ello acaba siendo poco práctico, y sobre todo, no proporciona esa epifanía que hace que el estudiante entienda la realidad del problema, y por tanto del proyecto, y por tanto del valor que le puede aportar la asignatura.
-
-En algunos casos, además, hay estudiantes que son incapaces de superar ese primer objetivo simplemente porque son incapaces de pensar en un problema a resolver, o de formular un problema que sea mínimamente real y por tanto la base para la construcción de una aplicación.
-Introduciendo un juego de rol
-
-Empatizar es literalmente ponerse en los zapatos de otra persona, el cliente en este caso, que tiene un problema, y entender cuál es el problema. La metodología de design thinking identifica muy bien la clave de diseñar un producto con éxito: si no entiendes a tu cliente, es imposible. Pero desde el punto de vista informático, si no lo entiendes no puedes formular correctamente historias de usuario, y no puedes crear a partir de ellas tests que efectivamente comprueben que se ha resuelto el problema.
-
-Desde el punto de vista de la asignatura y de la enseñanza, empatizar debería proporcionar esa epifanía que vamos buscando. Al ponerte en los zapatos de tu cliente, entiendes que el problema que tiene es real y vas a intentar hacer lo posible para solucionarlo.
-
-Con esos ejes, la empatía y la realidad, me he puesto a diseñar un mini-juego de rol que ayude al estudiante a formular el problema que va a tratar en la asignatura, usando fichas diseñadas ex profeso.
-
-En este juego de rol, hay un cliente que tiene un problema y un dev que le quiere ayudar a desarrollar ese problema.
+En este juego de rol, por lo tanto, hay un cliente con un problema y una persona de un equipo de desarrollo que le quiere ayudar a solucionar ese problema mediante un desarrollo informático.
 
 El cliente usará esta ficha para escribir, a mano, cuál es su problema. De esta forma se anima al estudiante a esforzarse en formular el problema de forma que lo entienda otra persona, pero a la vez asumirá el rol del cliente, de forma que tiene que empatizar con él para poder saber qué es lo que quiere. A la vez, separamos el problema de la posible solución (algo que es muy complicado hacer entender también), para que se centren en qué es lo que hay que solucionar, no en la solución.
 
@@ -108,3 +95,5 @@ asignatura. Si el estudiante B no valida el problema para la
      ha impedido la validación, para que lleve a cabo otra iteración
      del mismo o plantee un problema diferente.
 
+
+## Referencias
