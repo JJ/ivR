@@ -30,7 +30,29 @@ En este juego de rol, por lo tanto, hay un cliente con un problema y una persona
 
 El juego tiene tres fases: primero, cada estudiante escribe el problema en una ficha, en unos 10 minutos. En la segunda fase, se forman parejas sin ningún criterio y en la misma clase, van pasando por los dos roles cada persona de la pareja. Cuando han terminado, se crean nuevas parejas para pasar a la fase de validación. El resultado final será un problema validado (y que por tanto se podría usar en el objetivo 0 por parte del estudiante) o no.
 
-## Desarrollo del juego
+## Desarrollo del juego y resultados
+
+El juego se desarrolló el día 14 de septiembre, en una clase con capacidad suficiente. Sólo asistieron 28 personas de las 40 que había matriculadas en ese momento, 2 de las cuales se dieron de baja de la asignatura tras esa primera clase; por lo tanto, fueron 25 personas las que son hábiles para entregar el objetivo correspondiente. En general, la temporización no fue muy estricta. Durante la primera fase, se fue comprobando los que tuvieran "página en blanco" y se les entregó la ficha con diferentes motores de ideas, con el objetivo de que la usaran o se la entregaran a quien les tocara de pareja en la fase siguiente. Esta primera fase se terminó y se entregó la ficha de desarrollador, en la segunda fase. Los estudiantes se organizaron por su cuenta, generalmente entre personas ya conocidas o que se sentaban en la misma área. Tampoco creo que sea un componente crítico la pareja que se tenga, salvo que haya un caso en que los dos no hayan encontrado ninguna idea en la primera fase. Cuando hicieron las dos rondas, pasando cada persona de la pareja por los dos roles, se organizaron nuevas parejas (sin esperar que todo el mundo terminara) para pasar a la fase de validación. Se tardó en todas las tres fases un poco menos tiempo del previsto originalmente, especialmente en la tercera fase, que fue bastante rápida, y sobre todo concurrente con la segunda.
+
+Esta tercera fase fue la que suscitó más preguntas; las condiciones que tenía que cumplir el problema estaban explicitadas y también en el guión del objetivo, pero los estudiantes no sabían, en algunos casos, interpretarlas. En todo caso, la mayoría las interpretó a su arbitrio. Al final de todas estas fases, hubo 9 problemas que no pudieron validarse; se les propuso una nueva ronda con entrega de fichas; al día siguiente en clase de prácticas se volvió a hacer lo mismo.
+
+También se le pasó una encuesta de autoevaluación de la experiencia de aprendizaje. La encuesta tenía 4 preguntas, una de ellas dependiente de la respuesta de una de ellas. Hubo 27 respuestas. A la pregunta "Independientemente del resultado específico en tu caso, ¿crees que es positivo hacer este tipo de actividades para facilitar el aprendizaje?", solo un estudiante contestó "No". Preguntados si alcanzaron el objetivo, 6 respondieron que no.
+
+La última pregunta dependía de la respuesta a esta pregunta, y proponía diferentes factores que podían haber ayudado a alcanzar o a no superar el objetivo del juego. La moda para los que no pudieron validar el problema fue "No he podido hallar una idea y las opciones ofrecidas por el compañero/a no me han ayudado", con 3 de seis respuestas. Por otro lado, un 71.4% (15 personas) respondieron que "La implicación de los compañeros/as en las dos fases me ha ayudado mucho".
+
+El resultado de aprendizaje que se quiere obtener del juego, como es natural, es que se entregue el objetivo y se supere sin mucho problema. Aunque como se ha indicado no existe un plazo de entrega de objetivos, y el juego se hizo la semana pasada, actualmente solo hay una persona entre los que no llevaron a cabo el juego que haya entregado, aunque no es su primera matrícula. De los que asistieron y participaron en el juego, sólo 6 (un 23%) no han entregado todavía. Exactamente el 50% de los asistentes (13 sobre 26) ya lo han superado.
+
+Si lo comparamos con los estudiantes del año pasado, como control adicional, el año pasado en una semana el 24% había superado el primer objetivo; este año el porcentaje es ya del 32%. El porcentaje de entregas es similar, 45% (este año) frente a 43% (año anterior), sin embargo.
+
+En general, quien supera el objetivo lo supera a la primera, aunque hay alguna excepción. En todo caso, e incluso con los datos preliminares, podemos intentar aventurar algunas conclusiones.
+
+## 
+
+
+
+
+
+
 
 
 
