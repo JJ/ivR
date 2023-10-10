@@ -15,7 +15,7 @@ datos.encuesta$git <- str_detect(datos.encuesta$Conocimientos.previos,"git")
 datos.encuesta$python <- str_detect(datos.encuesta$Conocimientos.previos,"Python")
 
 resumen.datos <- datos.encuesta %>% group_by(year,Adquisicion.conocimientos,git,python) %>% summarize(n=n())
-resumen.git <- datos.encuesta %>% group_by(Adquisicion.conocimientos,git) %>% summarize(n=n())
+resumen.git <- datos.encuesta %>% group_by(Adquisicion.conocimientos,git) %>% summarize(n=n()) %>% mutate(freq = n / sum(n))
 resumen.conocimientos.year <- datos.encuesta %>% filter(git=TRUE) %>% group_by(Adquisicion.conocimientos,year) %>% summarize(n=n())
 resumen.conocimientos <- datos.encuesta %>% group_by(Adquisicion.conocimientos) %>% summarize(n=n())
 
