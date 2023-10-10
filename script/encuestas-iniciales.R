@@ -17,7 +17,9 @@ datos.encuesta$python <- str_detect(datos.encuesta$Conocimientos.previos,"Python
 resumen.datos <- datos.encuesta %>% group_by(year,Adquisicion.conocimientos,git,python) %>% summarize(n=n())
 resumen.git <- datos.encuesta %>% group_by(Adquisicion.conocimientos,git) %>% summarize(n=n())
 resumen.conocimientos.year <- datos.encuesta %>% filter(git=TRUE) %>% group_by(Adquisicion.conocimientos,year) %>% summarize(n=n())
+resumen.conocimientos <- datos.encuesta %>% group_by(Adquisicion.conocimientos) %>% summarize(n=n())
 
 ggplot(resumen.datos,aes(x=year,y=n,fill=Adquisicion.conocimientos))+geom_bar(stat="identity",position="dodge")+facet_grid(git~python)+theme_economist()+theme(legend.position="bottom")
 ggplot(resumen.git,aes(x=git,y=n,fill=Adquisicion.conocimientos))+geom_bar(stat="identity",position="dodge")+theme_economist()+theme(legend.position="bottom")
 ggplot(resumen.conocimientos.year,aes(x=year,y=n,fill=Adquisicion.conocimientos))+geom_bar(stat="identity",position="dodge")+theme_economist()+theme(legend.position="bottom")
+ggplot(resumen.conocimientos,aes(x=Adquisicion.conocimientos,y=n))+geom_bar(stat="identity",position="dodge")+theme_economist()+theme(legend.position="bottom")
