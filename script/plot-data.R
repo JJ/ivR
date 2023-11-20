@@ -15,6 +15,7 @@ aprobados <- all.data[ all.data$Aprobado == T,]
 aprobados$Aprobado <- NULL
 p <- c(.25,.5,.75,.9,1)
 tabla.dias.entregas <- aprobados %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+save(tabla.dias.entregas, file="data/tabla-dias-entregas.rda")
 
 all.data$Objetivo <- as.factor(all.data$Objetivo)
 
