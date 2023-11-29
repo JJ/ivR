@@ -65,7 +65,8 @@ compara.cursos <- rbind( compara.cursos, datos.2324)
 ggplot(compara.cursos, aes(x=Entrega.Semana, y=entregas, color=curso)) + geom_line() + geom_point(colour=1+compara.cursos$Objetivo)
 
 print(mean(hasta.hoy.2122$Objetivo))
-print(mean(datos.2223$Objetivo))
+print(mean(hasta.hoy.2223$Objetivo))
+print(mean(datos.2324$Objetivo))
 
 correcciones.2223 <- datos.2223[!is.na(datos.2223$Correccion),]
 correcciones.2223 <- correcciones.2223[order(correcciones.2223$Correccion),]
