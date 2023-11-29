@@ -68,21 +68,30 @@ print(mean(hasta.hoy.2122$Objetivo))
 print(mean(hasta.hoy.2223$Objetivo))
 print(mean(datos.2324$Objetivo))
 
-correcciones.2223 <- datos.2223[!is.na(datos.2223$Correccion),]
-correcciones.2223 <- correcciones.2223[order(correcciones.2223$Correccion),]
-correcciones.2223$entregas <- seq.int(nrow(correcciones.2223))
 
 correcciones.hasta.hoy.2122 <- hasta.hoy.2122[ hasta.hoy.2122$Correccion <= date.2122, ]
-
 correcciones.hasta.hoy.2122 <- correcciones.hasta.hoy.2122[ correcciones.hasta.hoy.2122$Incompleto == "Completo",]
 correcciones.hasta.hoy.2122 <- correcciones.hasta.hoy.2122[order(correcciones.hasta.hoy.2122$Correccion),]
 correcciones.hasta.hoy.2122$entregas <- seq.int(nrow(correcciones.hasta.hoy.2122))
-correcciones.vs.22.23 <- rbind( correcciones.2223, correcciones.hasta.hoy.2122)
 
-ggplot(correcciones.vs.22.23, aes(x=Correccion.Semana, y=entregas, color=curso)) + geom_line() + geom_point(colour=1+correcciones.vs.22.23$Objetivo)
+correcciones.hasta.hoy.2223 <- hasta.hoy.2223[ hasta.hoy.2223$Correccion <= date.2223, ]
+correcciones.hasta.hoy.2223 <- correcciones.hasta.hoy.2223[ correcciones.hasta.hoy.2223$Incompleto == "Completo",]
+correcciones.hasta.hoy.2223 <- correcciones.hasta.hoy.2223[order(correcciones.hasta.hoy.2223$Correccion),]
+correcciones.hasta.hoy.2223$entregas <- seq.int(nrow(correcciones.hasta.hoy.2223))
 
-ggplot(correcciones.vs.22.23, aes(x=curso,y=superacion))+ geom_boxplot( notch=T)
-summary(correcciones.2223$superacion)
+todas.correcciones <- rbind( correcciones.hasta.hoy.2223, correcciones.hasta.hoy.2122)
+
+correcciones.2324 <- datos.2324[!is.na(datos.2324$Correccion),]
+correcciones.2324 <- correcciones.2324[order(correcciones.2324$Correccion),]
+correcciones.2324$entregas <- seq.int(nrow(correcciones.2324))
+
+todas.correcciones <- rbind( todas.correcciones, correcciones.2324)
+
+ggplot(todas.correcciones, aes(x=Correccion.Semana, y=entregas, color=curso)) + geom_line() + geom_point(colour=1+todas.correcciones$Objetivo)
+
+ggplot(todas.correcciones, aes(x=curso,y=superacion))+ geom_boxplot( notch=T)
+summary(correcciones.2324$superacion)
 summary(correcciones.hasta.hoy.2122$superacion)
-wilcox.test(correcciones.2223$superacion,correcciones.hasta.hoy.2122$superacion)
-
+summary(correcciones.hasta.hoy.2223$superacion)
+wilcox.test(correcciones.2324$superacion,correcciones.hasta.hoy.2122$superacion)
+wilcox.test(correcciones.2324$superacion,correcciones.hasta.hoy.2223$superacion)
