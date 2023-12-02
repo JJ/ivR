@@ -1,7 +1,8 @@
+#R
 .Rproj.user
 *.Rproj
 .Rhistory
-
+.RData
 
 # emacs
 *~
@@ -12,6 +13,7 @@
 .idea/
 *.iml
 
+
 # Generados
 *.docx
 *.docx#
@@ -19,3 +21,5 @@
 
 # Latex (creo)
 auto/
+
+
