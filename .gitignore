@@ -21,5 +21,9 @@
 
 # Latex (creo)
 auto/
+*.tex
+*.log
+*.pdf
+*.synctex.gz
 
 
