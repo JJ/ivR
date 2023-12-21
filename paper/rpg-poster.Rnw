@@ -98,7 +98,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-
+One of the most difficult tasks for last-year software engineering students is to engage them in class, so that they adopt an aptitude that is conductive to autonomous learning. This combines with the fact that reaching non-strictly-technical learning objectives is a challenge in a purely technical degree. This is why, in a cloud computing class and in a project-based-learning environment, we designed a role-playing game to kick-off the projects they would work on using design thinking. In this poster we will describe the game itself and how it achieved its short-term, and to a certain point its mid-term objectives of making the students reach a passing grade.
 \end{abstract}
 
 %%
