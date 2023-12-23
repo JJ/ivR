@@ -33,7 +33,16 @@ entregas.data <- entregas.data %>% left_join(inicio, by="Curso")
 
 entregas.data$Entrega.Days  <- as.Date(entregas.data$Entrega) - as.Date(entregas.data$Inicio)
 entregas.data$Entrega.Week <- as.integer(entregas.data$Entrega.Days/7) +1
+entregas.data$First.Day.Of.Week <- as.Date(entregas.data$Inicio) + (entregas.data$Entrega.Week-1)*7
 
+
+ggplot(entregas.data, aes(x=Entrega.Week, group=Curso, color=Curso)) + geom_line(stat="count") + labs(title="Distribución de entregas por semana", x="Semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+xlim(0,20)
+
+ggplot(entregas.data[entregas.data$Curso=="23-24",], aes(x=First.Day.Of.Week, group=Curso, color=Curso)) + geom_line(stat="count") + geom_point(stat="count") + labs(title="Distribución de entregas por semana", x="Semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+scale_x_date(date_breaks = "1 week", date_labels =  "%d-%m")
+
+ggplot(entregas.data[entregas.data$Curso=="22-23",], aes(x=First.Day.Of.Week, group=Curso, color=Curso)) + geom_line(stat="count") + geom_point(stat="count") + labs(title="Distribución de entregas por semana", x="Semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+scale_x_date(date_breaks = "1 week", date_labels =  "%d-%m")
+
+ggplot(entregas.data[entregas.data$Curso=="21-22",], aes(x=First.Day.Of.Week, group=Curso, color=Curso)) + geom_line(stat="count") + geom_point(stat="count") + labs(title="Distribución de entregas por semana", x="Semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+scale_x_date(date_breaks = "1 week", date_labels =  "%d-%m") + xlim(as.Date("2021-09-13"),as.Date("2022-02-28"))
 
 ggplot(entregas.data, aes(x=dow.entrega, fill=Curso)) + geom_bar() + labs(title="Distribución de entregas por día de la semana", x="Día de la semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))
 ggplot(entregas.data, aes(x=dow.correccion, fill=Curso)) + geom_bar() + labs(title="Distribución de correcciones por día de la semana", x="Día de la semana", y="Número de correcciones", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))
