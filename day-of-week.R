@@ -51,6 +51,8 @@ ggplot( last.entrega, aes(x=Entrega.Week)) + geom_histogram(binwidth=1) + labs(t
 entregas.data[ entregas.data$Curso != "23-24",] %>% group_by(Estudiante) %>% summarise(Max.Entrega.Week=max(Entrega.Week), Max.Objetivo=max(Objetivo)) %>% filter(Max.Objetivo < 5) -> non.passing.student
 ggplot( non.passing.student, aes(x=Max.Entrega.Week,group=Max.Objetivo,fill=Max.Objetivo)) + geom_bar(stat="count") + labs(title="Distribución últimas de entregas por semana", x="Semana", y="Número de estudiantes") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+ xlim(0,20)+scale_fill_viridis_c(option="plasma")
 
+entregas.data[ entregas.data$Curso == "22-23",] %>% group_by(Estudiante) %>% summarise(Max.Entrega.Week=max(Entrega.Week), Max.Objetivo=max(Objetivo)) %>% filter(Max.Objetivo < 5) -> non.passing.student.2223
+ggplot( non.passing.student.2223, aes(x=Max.Entrega.Week,group=Max.Objetivo,fill=Max.Objetivo)) + geom_bar(stat="count") + labs(title="Distribución últimas de entregas por semana", x="Semana", y="Número de estudiantes") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))+ xlim(0,20)+scale_fill_viridis_c(option="plasma")
 
 ggplot(entregas.data, aes(x=dow.entrega, fill=Curso)) + geom_bar() + labs(title="Distribución de entregas por día de la semana", x="Día de la semana", y="Número de entregas", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))
 ggplot(entregas.data, aes(x=dow.correccion, fill=Curso)) + geom_bar() + labs(title="Distribución de correcciones por día de la semana", x="Día de la semana", y="Número de correcciones", fill="Curso") + theme_bw() + theme(plot.title = element_text(hjust = 0.5))
