@@ -38,6 +38,6 @@ entregas.data$First.Day.Of.Week <- as.Date(entregas.data$Inicio) + (entregas.dat
 estudiantes.superado <- entregas.data[ entregas.data$Objetivo == 5, ]$Estudiante
 entregas.data$Aprobado <- entregas.data$Estudiante %in% estudiantes.superado
 
-entregas.data$Days.to.Superacion <- as.Date(entregas.data$Correccion) - as.Date(entregas.data$Entrega)
+entregas.data$Days.to.Superacion <- as.numeric(difftime(entregas.data$Correccion,entregas.data$Entrega,units="hours"))/24
 
 save(entregas.data, file="data/entregas-data.rda")
