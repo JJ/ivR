@@ -35,4 +35,7 @@ entregas.data$Entrega.Days  <- as.Date(entregas.data$Entrega) - as.Date(entregas
 entregas.data$Entrega.Week <- as.integer(entregas.data$Entrega.Days/7) +1
 entregas.data$First.Day.Of.Week <- as.Date(entregas.data$Inicio) + (entregas.data$Entrega.Week-1)*7
 
+estudiantes.superado <- entregas.data[ entregas.data$Objetivo == 5, ]$Estudiante
+entregas.data$Aprobado <- entregas.data$Estudiante %in% estudiantes.superado
+
 save(entregas.data, file="data/entregas-data.rda")
