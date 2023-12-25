@@ -130,6 +130,15 @@
 
 \section{Introduction}
 
+
+We will try to answer the following research questions:\begin{itemize}
+\item {\bf RQ1:} Can we measure the effect of agile methodologies on the learning outcomes?
+\item {\bf RQ2:} Are there early indicators or class success or failure?
+\item {\bf RQ3:} Can we measure the effect of flipped learning on the learning outcomes?
+\end{itemize}
+
+
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib}
 
