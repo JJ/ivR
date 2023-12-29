@@ -144,7 +144,7 @@ We will try to answer the following research questions:\begin{itemize}
 The rest of the paper is organized as follows: next we will present the state of the art in learning analytics applied to evaluative formation and flipped learning. The class setup, as well as the way data is collected will be presented next, in Section \ref{sec:setup}. The results of the analysis will be presented in Section \ref{sec:results}, and finally we will draw some conclusions in Section \ref{sec:conclusions}.
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{../rpg.bib,../dev.bib}
+\bibliography{../rpg.bib,../dev.bib, ../agile.bib}
 
 
 \end{document}
