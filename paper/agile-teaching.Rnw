@@ -130,7 +130,9 @@
 
 \section{Introduction}
 
-Teaching software engineering represents not only a challenge, but a series of challenges to the teacher, who needs the student to develop a series of marketable skills at the same time that development is assessed in order to obtain a grade. At the same time, mainstream software development follows an {\em agile mindset}, following the Agile Manifesto \cite{agilemanifesto},
+Teaching software engineering represents not only a challenge, but a series of challenges to the teacher, who needs the student to acquire a series of marketable skills at the same time that development is assessed in order to obtain a grade. At the same time, mainstream software development follows an {\em agile mindset}, following the Agile Manifesto \cite{agilemanifesto}, which is a customer-centered philosophy that maintains that any change in code should add value to the customer, either directly or indirectly. Teaching mindsets of philosophies is a notch more complicated than teaching skills; evaluating mindsets is even more complex. But that is what an industry with its ever growing {\em need for talent} is asking for.
+
+One of the ways of teaching a mindset is having that same mindset while teaching; that is, if you want to teach agile, be agile while teaching \cite{krehbiel2017agile}.
 
 We will try to answer the following research questions:\begin{itemize}
 \item {\bf RQ1:} Can we measure the effect of agile methodologies on the learning outcomes?
