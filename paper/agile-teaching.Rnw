@@ -136,7 +136,7 @@ One of the ways of teaching a mindset is having that same mindset while teaching
 
 Manifestos are never enough either in development or teaching, and agile development encourages the adoption of best practices in every phase of development; but the last part of the manifesto which talks about continuous improvement, as well as the fact that we are talking about {\em best} practices, would need some way of measuring progress and how adopted practices affect the classroom. This is why we would like to add a new item to the manifesto: {\em learning analytics} \cite{clow2013overview} over anecdotal evidence or end-of-class failure/success rates.
 
-
+Within this agile mindset, there are teaching methodologies that fit better; adopting these best practices is the first step towards agile teaching. We will focus on two of them that fit well with each other: project-based learning gives the student autonomy (which is one of the items in the manifesto) through the development of a project across one or several subjects \citye{krajcik2006project}
 
 We will try to answer the following research questions:\begin{itemize}
 \item {\bf RQ1:} Can we measure the effect of agile methodologies on the learning outcomes?
@@ -148,7 +148,7 @@ We will try to answer the following research questions:\begin{itemize}
 The rest of the paper is organized as follows: next we will present the state of the art in learning analytics applied to evaluative formation and flipped learning. The class setup, as well as the way data is collected will be presented next, in Section \ref{sec:setup}. The results of the analysis will be presented in Section \ref{sec:results}, and finally we will draw some conclusions in Section \ref{sec:conclusions}.
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib}
+\bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
 
 \end{document}
