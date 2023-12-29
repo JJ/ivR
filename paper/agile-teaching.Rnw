@@ -144,7 +144,15 @@ In this paper we will describe the experience along 3 years in a 4th year (7th s
 \item {\bf RQ3:} Can we measure the effect of flipped learning through the gathered software analytics?
 \end{itemize}
 
-The rest of the paper is organized as follows: next we will present the state of the art in learning analytics applied to evaluative formation and flipped learning. The class setup, as well as the way data is collected will be presented next, in Section \ref{sec:setup}. The results of the analysis will be presented in Section \ref{sec:results}, and finally we will draw some conclusions in Section \ref{sec:conclusions}.
+The rest of the paper is organized as follows: next we will present the state of the art in learning analytics applied to evaluative formation and flipped learning. The class setup, as well as the way data is collected will be presented next, in Section \ref{sec:setup}. The results of the analysis will be presented in Section \ref{sec:results} along with the answers to the research questions, and finally we will draw some conclusions in Section \ref{sec:conclusions}.
+
+\section{State of the art}
+
+\section{Class set up and methodology}
+\label{sec:setup}
+
+\section{Results}
+\label{sec:results}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
