@@ -148,6 +148,8 @@ The rest of the paper is organized as follows: next we will present the state of
 
 \section{State of the art}
 
+Learning analytics \cite{clow2013overview} has been applied to all kind of learning processes and subjects. In general, it is important to consider a learning (and possibly learner) model in order to be able to correctly measure learning outcomes and how they are reached. For instance, \cite{stanja2023formative} focuses on {\em conceptions}, how the students understand (or not) certain specific and common ideas, thus their process is geared towards using common assessment tools to measure understanding of those conceptions.
+
 \section{Class set up and methodology}
 \label{sec:setup}
 
