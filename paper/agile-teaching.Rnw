@@ -136,6 +136,8 @@ This implies a certain workload, mainly in the early stages when students submit
 
 In general, workload for the teacher is much more intensive than it is for {\em summative} evaluation or traditional {\em flipped learning} classes. However, the system has been set up so that most of the time spent by the teacher is effectively spent in giving constructive feedback to the student, so that they can reach their learning objectives.
 
+During face to face classes, time is spent either addressing issues with specific students, or making small-group explanations to those that have just passed an objective. These whiteboard (never slides) expositions are adapted to specific circumstances of the student of group of students (early submitters, or late ones, for instance). In general, classes are working spaces where students and teacher interact with each other.
+
 After the course is over, student GitHub nicks are anonymized with a one-way hash so that privacy is preserved\footnote{Even if students are warned to use whatever GitHub nick they want, including an anonymous, class-only one. The only thing needed for the teacher is to be able to clearly identify which student corresponds to every nick}. These are publicly available at \url{https://github.com/JJ/ivR}
 
 Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}. Additional data is collected in the form of surveys for specific events or activities, as well as at the beginning and at the end of every year\footnote{These surveys are validated every year and slightly changed according to feedback. How specific surveys are validated will be mentioned when used}.
