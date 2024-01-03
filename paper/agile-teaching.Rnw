@@ -147,6 +147,13 @@ Next we will choose metrics and analyze the kind of information we can obtain fr
 \section{Results}
 \label{sec:results}
 
+The metrics used in the learning analytics system should, ideally, be obtained directly from the student activity, without needing additional surveys. They should also be directly related to learning outcomes, and, if possible, learning attitude, possibly indirectly in this case. This is why in this case we have chosen two metrics:\begin{itemize}
+\item The time in which a student submits their PR for an objective.
+\item The time in which the teacher marks the objective as {\em passed} for the student.
+\end{itemize}
+
+In the first case, it is computed directly from the date the PR to the centralized repository is merged, that is, when the objective submitted clears the initial tests; a GitHub workflow computes it automatically and submits it to a data file that is also registered in the repository. It follows our requirements: it is obtained directly from the student activity, directly related to learning outcomes, namely, when the students feel they are ready at least to understand initial feedback from the teacher. Their attitude is reflected mainly in the time between clearing the previous objective and that submission, although that is clearly influenced by the difficulty of the objective itself.
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
