@@ -156,8 +156,8 @@ In the first case, it is computed directly from the date the PR to the centraliz
 
 In the second case, there might be a small delay between the moment the objective is accepted and the mark is done in the file and submitted to the repository, but this delay is usually a few minutes, and except for errors, less than one hour. The scale of this metric, or the difference between both times, is counted by days, so the small bias this might introduce is not really important.
 
-In order to be able to normalize and compare different courses, these dates are counted from the day the course start.
-
+In order to be able to normalize and compare different courses, these dates are counted from the day the course start. Data used in this paper is available at the same GitHub repository as this paper. Initial data as indicates is shown in Figure \ref{fig:initial}.
+%
 <<initial, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.env="figure*", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing). The gap shows the period between the \"ordinary\" and \"extraordinary\" evaluation." >>=
 library(ggplot2)
 load("../data/entregas-data.rda")
@@ -175,6 +175,9 @@ ggplot(entregas.data, aes(x=Entrega.Days, y=idu, color=as.factor(Objetivo))) + s
   theme_bw() +
   theme(legend.position="none")
 @
+%
+This visualization already gives you an idea of the time needed to pass every objective: there is an abundance of long segments in the brown color, which is used for objectives number 2 and 4, the most complicated (thus receiving more credit). The slope that the proximal ends of the segments form also shows the rythm of submission, how it slows down during certain periods and then accelerates. But all this, besides giving you a general idea of how every course differs from the others, is not really a source of actionable intelligence, either from one year to the next or in real time for a specific course.
+
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
