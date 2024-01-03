@@ -154,6 +154,13 @@ The metrics used in the learning analytics system should, ideally, be obtained d
 
 In the first case, it is computed directly from the date the PR to the centralized repository is merged, that is, when the objective submitted clears the initial tests; a GitHub workflow computes it automatically and submits it to a data file that is also registered in the repository. It follows our requirements: it is obtained directly from the student activity, directly related to learning outcomes, namely, when the students feel they are ready at least to understand initial feedback from the teacher. Their attitude is reflected mainly in the time between clearing the previous objective and that submission, although that is clearly influenced by the difficulty of the objective itself.
 
+In the second case, there might be a small delay between the moment the objective is accepted and the mark is done in the file and submitted to the repository, but this delay is usually a few minutes, and except for errors, less than one hour. The scale of this metric, or the difference between both times, is counted by days, so the small bias this might introduce is not really important.
+
+In order to be able to normalize and compare different courses, these dates are counted from the day the course start.
+
+<<initial, echo=FALSE>>=
+@
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
