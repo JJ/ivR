@@ -159,6 +159,7 @@ In the second case, there might be a small delay between the moment the objectiv
 In order to be able to normalize and compare different courses, these dates are counted from the day the course start.
 
 <<initial, echo=FALSE>>=
+load("data/entregas-data.rda")
 @
 
 \bibliographystyle{ACM-Reference-Format}
