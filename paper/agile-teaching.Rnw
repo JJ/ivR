@@ -124,6 +124,14 @@ During face to face classes, time is spent either addressing issues with specifi
 
 After the course is over, student GitHub nicks are anonymized with a one-way hash so that privacy is preserved\footnote{Even if students are warned to use whatever GitHub nick they want, including an anonymous, class-only one. The only thing needed for the teacher is to be able to clearly identify which student corresponds to every nick}. These are publicly available at \url{https://github.com/JJ/ivR}.
 
+In Spain and for this subject, classes and evaluations are organized in this way:\begin{itemize}
+\item A class period, which takes 15 weeks, for a total of 60 face-to-face hours. This is equivalent to 6 ECTS credits.
+\item The {\em ordinary evaluation period}, which takes place up to 4 weeks later than the end of classes.
+\item The {\em extraordinary evaluation period}, which takes place up to 3 weeks after the ordinary evaluation period.
+\end{itemize}
+
+The way the class is organized, whoever passes the minimum number of objectives during the ordinary period is evaluated during that period; if that is not the case, students can continue submitting their objectives up to the end of the extraordinary evaluation period, whatever objectives have been reached during the ordinary evaluation period do not need to be submitted.
+
 Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}. Additional data is collected in the form of surveys for specific events or activities, as well as at the beginning and at the end of every year\footnote{These surveys are validated every year and slightly changed according to student feedback. How specific surveys are validated will be mentioned when used}.
 
 Next we will choose metrics and analyze the kind of information we can obtain from them, and how they can be used to improve learning outcomes.
