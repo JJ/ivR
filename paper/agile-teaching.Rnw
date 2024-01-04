@@ -131,6 +131,23 @@ Next we will choose metrics and analyze the kind of information we can obtain fr
 \section{Results}
 \label{sec:results}
 
+A general description of the three courses over which we have been using this methodology are probably in order. We show general data about every course in Table \ref{tab:courses}.
+
+\begin{table}
+\caption{General data about the three courses}
+\begin{tabular}{|l|c|c|c|}
+\hline
+Course & 2021-22 & 2022-23 & 2023-24\footnote{At the time of writing, these results are provisional} \\
+Students & 51 & 48 & 40 \\
+\% no-shows & 31.37\% & 72.92\% & 27\% \\
+\% passed ordinary &  39.21\% & 20.83\% & 48\% \\
+\% passed extraordinary & 23.53\% & 12.5\% & N/A \\
+\% total passed & 62.74\% & 33.33\% & N/A \\
+\hline
+
+\end{tabular}
+\end{table}
+
 The metrics used in the learning analytics system should, ideally, be obtained directly from the student activity, without needing additional surveys. They should also be directly related to learning outcomes, and, if possible, learning attitude, possibly indirectly in this case. This is why in this case we have chosen two metrics:\begin{itemize}
 \item The time in which a student submits their PR for an objective.
 \item The time in which the teacher marks the objective as {\em passed} for the student.
@@ -162,7 +179,13 @@ ggplot(entregas.data, aes(x=Entrega.Days, y=idu, color=as.factor(Objetivo))) + s
 %
 This visualization already gives you an idea of the time needed to pass every objective: there is an abundance of long segments in the brown color, which is used for objectives number 2 and 4, the most complicated (thus receiving more credit). The slope that the proximal ends of the segments form also shows the rythm of submission, how it slows down during certain periods and then accelerates. But all this, besides giving you a general idea of how every course differs from the others, is not really a source of actionable intelligence, either from one year to the next or in real time for a specific course.
 
+From this data we can try and extract some specific measure of individual performance, and the one that pops out most immediately is simply the difference between the time of submission and the time of approval, a measure of the effort the students put into learning the specific concepts and skills requires for every objective.
 
+<<histogram.diff, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.env="figure*", fig.cap="Histogram of the difference between the time of submission and the time of approval for every objective. Bins are 7 days wide">>=
+ggplot(entregas.data[ entregas.data$Curso == "21-22",], aes(x=Days.to.Superacion,fill="21-22")) + geom_histogram(alpha=0.2,binwidth=7,position="identity") + geom_histogram(data=entregas.data[ entregas.data$Curso == "22-23",],aes(x=Days.to.Superacion,fill="22-23"), alpha=0.2,binwidth=7) + geom_histogram(data=entregas.data[ entregas.data$Curso == "23-24",],aes(x=Days.to.Superacion,fill="23-24"), alpha=0.2,binwidth=7) + labs(x="Days to approval", y="Number of objectives") + theme_bw()
+@
+
+Figure \ref{fig:histogram.diff} shows the histogram of this difference for every objective in every course; this already shows differences between the different courses, that go beyond the different number of students; the first two courses had approximately the same number of students (although, during 21-22, the number of {\em active} students, those that showed up at least one or submitted at least one objective, was much higher), while this year had less students. However, 21-22 and 23-24 show the same distribution, with the mode being student overcoming the objective in 1 week lr less, while 22-23 shows that most students took between 1 and 2 weeks to pass every objective.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
