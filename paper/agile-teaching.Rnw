@@ -169,7 +169,7 @@ In the second case, there might be a small delay between the moment the objectiv
 
 In order to be able to normalize and compare different courses, these dates are counted from the day the course start. Data used in this paper is available at the same GitHub repository as this paper. Initial data as indicates is shown in Figure \ref{fig:initial}.
 %
-<<initial, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.env="figure*", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing). The gap shows the period between the \"ordinary\" and \"extraordinary\" evaluation." >>=
+<<initial, echo=FALSE,warning=FALSE, fig.pos="h!tb", fig.env="figure*", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing). The gap shows the period between the \"ordinary\" and \"extraordinary\" evaluation." >>=
 library(ggplot2)
 load("../data/entregas-data.rda")
 # sort entregas.data by Curso and Entrega.Days
@@ -191,18 +191,24 @@ This visualization already gives you an idea of the time needed to pass every ob
 
 From this data we can try and extract some specific measure of individual performance, and the one that pops out most immediately is simply the difference between the time of submission and the time of approval, a measure of the effort the students put into learning the specific concepts and skills requires for every objective.
 
-<<histogram.diff, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.cap="Histogram of the difference between the time of submission and the time of approval for every objective. Bins are 7 days wide">>=
+<<histogram.diff, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Histogram of the difference between the time of submission and the time of approval for every objective. Bins are 7 days wide">>=
 ggplot(entregas.data[ entregas.data$Curso == "21-22",], aes(x=Days.to.Superacion,fill="21-22")) + geom_histogram(alpha=0.2,binwidth=7,position="identity") + geom_histogram(data=entregas.data[ entregas.data$Curso == "22-23",],aes(x=Days.to.Superacion,fill="22-23"), alpha=0.2,binwidth=7) + geom_histogram(data=entregas.data[ entregas.data$Curso == "23-24",],aes(x=Days.to.Superacion,fill="23-24"), alpha=0.2,binwidth=7) + labs(x="Days to approval", y="Number of objectives") + theme_bw()
 @
 
 Figure \ref{fig:histogram.diff} shows the histogram of this difference for every objective in every course; this already shows differences between the different courses, that go beyond the different number of students; the first two courses had approximately the same number of students (although, during 21-22, the number of {\em active} students, those that showed up at least one or submitted at least one objective, was much higher), while this year had less students. However, 21-22 and 23-24 show the same distribution, with the mode being student overcoming the objective in 1 week or less, while 22-23 shows that most students took between 1 and 2 weeks to pass every objective. This already shows the descriptive power of this metric: we already know that the results during 22-23 were not good, and this is correlated with the fact that they needed more time to pass every objective.
 
-This metric, however, does not distinguish between students who passed and those who fell short of objective number 5, the minimum requirement. Will time-to-pass be a good predictor of success?
-
-<<boxplot.pass, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by whether the student passed or not.">>=
-# show also median value on the boxplot
+<<boxplot.pass, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by whether the student passed or not.">>=
 ggplot(entregas.data, aes(x=as.factor(Aprobado), y=Days.to.Superacion, fill=as.factor(Aprobado))) + geom_boxplot(notch = T) + labs(x="Pass", y="Days to approval") + theme_bw() + geom_text(data=entregas.data[entregas.data$Aprobado==FALSE,], aes(label=median(Days.to.Superacion), y=median(Days.to.Superacion)+1,x=FALSE), stat='summary')+ geom_text(data=entregas.data[entregas.data$Aprobado==TRUE,], aes(label=median(Days.to.Superacion), y=median(Days.to.Superacion)+1,x=TRUE), stat='summary')
+#wilcox.test(entregas.data[entregas.data$Aprobado==FALSE,]$Days.to.Superacion, entregas.data[entregas.data$Aprobado==TRUE,]$Days.to.Superacion)
 @
+
+This metric, however, does not distinguish between students who passed and those who fell short of objective number 5, the minimum requirement. Will time-to-pass be a good predictor of success? This is represented in Figure \ref{fig:boxplot.pass}, that shows a boxplot of the number of days to pass an objective (from submission) for those who failed the course (FALSE) and those who passed (TRUE). Median differs, as shown, in 3 days, and the difference is statistically significant (p-value < 0.001), so this metric is a good candidate for being an early indicator of success. However, this is an average over all objectives and over all the class, with objectives with more submissions weighing more. It is also an average over all courses, with path-dependent differences between courses (because it will depend on the student that submits first, and how they help the rest of the student with reviews). We show the boxplot for the different courses in Figure \ref{fig:boxplot.course}, taking into account only students who have passed. In this case, the difference between courses 21-22 and 23-24 is not statistically significant, but the difference between 22-23 and the other two is (p-value < 0.001).
+
+<<boxplot.course, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by course.">>=
+ggplot(entregas.data[entregas.data$Aprobado==TRUE,], aes(x=as.factor(Curso), y=Days.to.Superacion, fill=as.factor(Curso))) + geom_boxplot(notch = T) + labs(x="Pass", y="Days to approval") + theme_bw()
+@
+
+Even when we are taking into account those that passed, on average a {\em suboptimal} course will take {\em more} time to succeed in passing an objective. Obviously, more time for every objective will mean that there will be less time for the rest of the remaining objectives. While a better-than-average course will have a high success rate, students will be able to reach further in terms of objectives than others that do not.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
