@@ -200,7 +200,8 @@ Figure \ref{fig:histogram.diff} shows the histogram of this difference for every
 This metric, however, does not distinguish between students who passed and those who fell short of objective number 5, the minimum requirement. Will time-to-pass be a good predictor of success?
 
 <<boxplot.pass, echo=FALSE, warning=FALSE, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by whether the student passed or not.">>=
-ggplot(entregas.data, aes(x=as.factor(Aprobado), y=Days.to.Superacion, fill=as.factor(Aprobado))) + geom_boxplot(notch = T) + labs(x="Pass", y="Days to approval") + theme_bw()
+# show also median value on the boxplot
+ggplot(entregas.data, aes(x=as.factor(Aprobado), y=Days.to.Superacion, fill=as.factor(Aprobado))) + geom_boxplot(notch = T) + labs(x="Pass", y="Days to approval") + theme_bw() + geom_text(data=entregas.data[entregas.data$Aprobado==FALSE,], aes(label=median(Days.to.Superacion), y=median(Days.to.Superacion)+1,x=FALSE), stat='summary')+ geom_text(data=entregas.data[entregas.data$Aprobado==TRUE,], aes(label=median(Days.to.Superacion), y=median(Days.to.Superacion)+1,x=TRUE), stat='summary')
 @
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
