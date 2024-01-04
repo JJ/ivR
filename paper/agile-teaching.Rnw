@@ -142,12 +142,12 @@ Next we will choose metrics and analyze the kind of information we can obtain fr
 A general description of the three courses over which we have been using this methodology are probably in order. We show general data about every course in Table \ref{tab:courses}.
 
 \begin{table}
-\caption{General data about the three courses}
+\caption{General data about the three courses\ref{tab:courses}}
 \begin{tabular}{|l|c|c|c|}
 \hline
 Course & 2021-22 & 2022-23 & 2023-24\footnote{At the time of writing, these results are provisional} \\
 Students & 51 & 48 & 40 \\
-\% no-shows & 31.37\% & 72.92\% & 27\% \\
+\% no-shows & 37.25\% & 66.66\% & 27\% \\
 \% passed ordinary &  39.21\% & 20.83\% & 48\% \\
 \% passed extraordinary & 23.53\% & 12.5\% & N/A \\
 \% total passed & 62.74\% & 33.33\% & N/A \\
@@ -156,7 +156,9 @@ Students & 51 & 48 & 40 \\
 \end{tabular}
 \end{table}
 
-The metrics used in the learning analytics system should, ideally, be obtained directly from the student activity, without needing additional surveys. They should also be directly related to learning outcomes, and, if possible, learning attitude, possibly indirectly in this case. This is why in this case we have chosen two metrics:\begin{itemize}
+These statistics show that a methodology, by itself, is not enough to guarantee good results. The first year it was used the overall result was relatively good (more than 50\% passed), but 1/5th of the class needed additional time to pass. The next year, overall, was a disaster, with only 1/3rd of the class passing, and of those who did, more than 1/3rd needed to do so on additional time. The causes of this are still being analyzed (and are beyond the scope of this paper), but what is clear is that specific changes need to be made from one year to the next so that whatever students fall in class every year are able to succeed.
+
+These end-of-course metrics will need real-time analytics to be able to intervene on class while there is still time to do it. And the metrics used in the learning analytics system should, ideally, be obtained directly from the student activity, without needing additional surveys. They should also be directly related to learning outcomes, and, if possible, learning attitude, possibly indirectly in this case. This is why in this case we have chosen two metrics:\begin{itemize}
 \item The time in which a student submits their PR for an objective.
 \item The time in which the teacher marks the objective as {\em passed} for the student.
 \end{itemize}
