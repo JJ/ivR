@@ -130,9 +130,7 @@ In Spain and for this subject, classes and evaluations are organized in this way
 \item The {\em extraordinary evaluation period}, which takes place up to 3 weeks after the ordinary evaluation period.
 \end{itemize}
 
-The way the class is organized, whoever passes the minimum number of objectives during the ordinary period is evaluated during that period; if that is not the case, students can continue submitting their objectives up to the end of the extraordinary evaluation period, whatever objectives have been reached during the ordinary evaluation period do not need to be submitted.
-
-Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}. Additional data is collected in the form of surveys for specific events or activities, as well as at the beginning and at the end of every year\footnote{These surveys are validated every year and slightly changed according to student feedback. How specific surveys are validated will be mentioned when used}.
+The way the class is organized, whoever passes the minimum number of objectives during the ordinary period is evaluated during that period; if that is not the case, students can continue submitting their objectives up to the end of the extraordinary evaluation period, whatever objectives have been reached during the ordinary evaluation period do not need to be submitted. Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}.
 
 Next we will choose metrics and analyze the kind of information we can obtain from them, and how they can be used to improve learning outcomes.
 
@@ -142,7 +140,7 @@ Next we will choose metrics and analyze the kind of information we can obtain fr
 A general description of the three courses over which we have been using this methodology are probably in order. We show general data about every course in Table \ref{tab:courses}.
 
 \begin{table}
-\caption{General data about the three courses\ref{tab:courses}}
+\caption{General data about the three courses\label{tab:courses}}
 \begin{tabular}{|l|c|c|c|}
 \hline
 Course & 2021-22 & 2022-23 & 2023-24\footnote{At the time of writing, these results are provisional} \\
@@ -156,7 +154,7 @@ Students & 51 & 48 & 40 \\
 \end{tabular}
 \end{table}
 
-These statistics show that a methodology, by itself, is not enough to guarantee good results. The first year it was used the overall result was relatively good (more than 50\% passed), but 1/5th of the class needed additional time to pass. The next year, overall, was a disaster, with only 1/3rd of the class passing, and of those who did, more than 1/3rd needed to do so on additional time\footnote{Provisional results for this year are, however, quite promising, with the numbers of person who have passed already surpassing 21-22}. The causes of this are still being analyzed (and are beyond the scope of this paper), but what is clear is that specific changes need to be made from one year to the next so that whatever students fall in class every year are able to succeed. Please note that no-shows + passed add up to 100\%, since technically those that do not pass are not submitting their objectives, they are "not showing up" to be evaluated.
+These statistics show that a methodology, by itself, is not enough to guarantee good results. The first year it was used the overall result was relatively good (more than 50\% passed), but 1/5th of the class needed additional time to pass. The next year, overall, was a disaster, with only 1/3rd of the class passing, and of those who did, more than 1/3rd needed to do so on additional time\footnote{Provisional results for this year are, however, quite promising, with the number of persons who have passed already surpassing 21-22}. The causes of this are still being analyzed (and are beyond the scope of this paper), but what is clear is that specific changes need to be made from one year to the next so that whatever students fall in class every year are able to succeed. Please note that no-shows + passed add up to 100\%, since technically those that do not pass are not submitting their objectives, they are "not showing up" to be evaluated.
 
 These end-of-course metrics will need real-time analytics to be able to intervene on class while there is still time to do it. And the metrics used in the learning analytics system should, ideally, be obtained directly from the student activity, without needing additional surveys. They should also be directly related to learning outcomes, and, if possible, learning attitude, possibly indirectly in this case. This is why in this case we have chosen two metrics:\begin{itemize}
 \item The time in which a student submits their PR for an objective.
@@ -167,7 +165,8 @@ In the first case, it is computed directly from the date the PR to the centraliz
 
 In the second case, there might be a small delay between the moment the objective is accepted and the mark is done in the file and submitted to the repository, but this delay is usually a few minutes, and except for errors, less than one hour. The scale of this metric, or the difference between both times, is counted by days, so the small bias this might introduce is not really important.
 
-In order to be able to normalize and compare different courses, these dates are counted from the day the course start. Data used in this paper is available at the same GitHub repository as this paper. Initial data as indicates is shown in Figure \ref{fig:initial}.
+In order to be able to normalize and compare different courses, these dates are counted from the day the course start. % Data used in this paper is available at the same GitHub repository as this paper.
+Initial data is shown in Figure \ref{fig:initial}.
 %
 <<initial, echo=FALSE,warning=FALSE, fig.height=4, fig.pos="h!tb", fig.env="figure*", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing). The gap shows the period between the \"ordinary\" and \"extraordinary\" evaluation." >>=
 library(ggplot2)
