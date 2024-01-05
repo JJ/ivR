@@ -209,6 +209,17 @@ ggplot(entregas.data[entregas.data$Aprobado==TRUE,], aes(x=as.factor(Curso), y=D
 @
 
 Even when we are taking into account those that passed, on average a {\em suboptimal} course will take {\em more} time to succeed in passing an objective. Obviously, more time for every objective will mean that there will be less time for the rest of the remaining objectives. While a better-than-average course will have a high success rate, students will be able to reach further in terms of objectives than others that do not.
+
+This metric refers, in general, to autonomous learning; formative evaluation favors that mode of achieving learning objectives, but in order to have a clearer picture of how learning takes place, we need to factor in interaction with the teacher and other students {\em in class}. Problem-based learning favors flipped learning eschewing lectures, with unidirectional communication from teacher to students; this is why we need to find out how this time spent in class actually translates into learning. First we will compare submission during the class period (first 15 weeks) to the rest.
+
+<<bars.period, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by whether the student submitted during the class period or not.">>=
+library(dplyr)
+entregas.data %>% mutate(Periodo=Entrega.Week<=15) -> entregas.data
+ggplot(entregas.data, aes(x=as.factor(Entrega.Week), fill=as.factor(Objetivo)))+ scale_fill_brewer(type="div")  + geom_bar(position="identity") + labs(x="Week", y="Number of objectives") + scale_x_discrete( limits=1:22)+theme_bw()
+@
+
+Figure \ref{fig:bars.period} shows a barplot of the number of objectives, with color indicating the actual number of objective. We can see what is the usual period of submission for every objective (objective 0 finishing in the second week, for instance, objective 1 in the 5th week, objective 2 in the 7th and so on). Submissions take a dive after the 15th week, but this is due to many factors, including the fact that it is a vacation period and that at least some of the students stop submitting after reaching the minimum number of objectives required for passing.
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
