@@ -222,7 +222,7 @@ Even when we are taking into account those that passed, on average a {\em subopt
 
 This metric refers, in general, to autonomous learning; formative evaluation favors that mode of achieving learning objectives, but in order to have a clearer picture of how learning takes place, we need to factor in interaction with the teacher and other students {\em in class}. Problem-based learning favors flipped learning eschewing lectures, with unidirectional communication from teacher to students; this is why we need to find out how this time spent in class actually translates into learning. First we will compare submission during the class period (first 15 weeks) to the rest.
 
-<<bars.period, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by whether the student submitted during the class period or not.">>=
+<<bars.period, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Barplot of submission per week, with colors indicating objective number.">>=
 library(dplyr)
 entregas.data %>% mutate(Periodo=Entrega.Week<=15) -> entregas.data
 ggplot(entregas.data, aes(x=as.factor(Entrega.Week), fill=as.factor(Objetivo)))+ scale_fill_brewer(type="div")  + geom_bar(position="identity") + labs(x="Week", y="Number of objectives") + scale_x_discrete( limits=1:22)+theme_bw() + labs(fill="Objective")
@@ -252,7 +252,7 @@ The metrics that we have proposed are two: submission and approval time for ever
 
 Research question 2 can be answered by looking at the {\em reaction time} in early objectives. Even if submissions are made early, or soon after the previous objective is cleared, managing to get an objective approved in more days than the average, on or beyond the 75\% percentile, will raise a flag and indicate a student that will need special attention. The same happens for the whole class; if the median starts to shift beyond 6 days, the whole class will need some intervention to get a significant amount of students passing the subject. Of course, too many students dropping out of class and stopping making submissions will also be a cause for failure, but the leverage the professor might have in those case is extremely limited. Too much time to pass an objective, however, would indicate that the student has the attitude, if not the aptitude to pass it, so an intervention could have certain impact.
 
-
+The answer to RQ3 can be seen mainly in Figures \ref{fig:bars.period}, \ref{fig:weekday.submissions} and \ref{fig:weekday.pass}, that show that weekly classes have a clear impact on submission, as well as passes, and also weeks without classes showing overall lower numbers of submissions. This proves that agile teaching, with frequent interactions with the {\em client} (= student), and using data to assess and address specific needs, can be used to improve individual student, as well as class performance.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
