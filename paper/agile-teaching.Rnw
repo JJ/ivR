@@ -52,6 +52,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
+The agile manifesto provides a framework for software development for which customer comes first. Here we will describe an teaching experience based on agile principles that puts students at the center of a strategy that, through the use of fit learning analytics, is able to optimize the potential of a class and its individual students. We used project-based learning and formative evaluation as agile methodologies, evaluating progress based on learning objectives submitted and evaluated asychronously. The time when every objective is submitted and the time taken to pass it are the essential data points that will be leveraged to evaluate class progress, and the impact of specific measures taken to improve it, in-class or from one course to the next. Measures taken through three years with the same methodology prove that agile teaching can work, but it needs measurements and interventions to reach its full potential.
 
 \end{abstract}
 
