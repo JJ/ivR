@@ -22,15 +22,24 @@
 
 \begin{document}
 
-\title{Evaluative formation for agile teaching}
+\title{Formative evaluation and learning analytics for agile teaching}
 
-\author{JJ Merelo-Guervós}
-\email{jmerelo@ugr.es}
-\orcid{0000-0002-1385-9741}
+% \author{JJ Merelo-Guervós}
+% \email{jmerelo@ugr.es}
+% \orcid{0000-0002-1385-9741}
+% \affiliation{%
+%   \institution{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada}
+%   \city{Granada}
+%   \country{Spain}
+% }
+%
+\author{A. U. Thor}
+\email{thorau@univ.edu}
+\orcid{0000-000}
 \affiliation{%
-  \institution{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada}
-  \city{Granada}
-  \country{Spain}
+  \institution{Department of XYZ, Edu. U.}
+  \city{Lalaland}
+  \country{World}
 }
 
 
@@ -203,7 +212,7 @@ ggplot(entregas.data, aes(x=as.factor(Aprobado), y=Days.to.Superacion)) + geom_b
 
 This metric, however, does not distinguish between students who passed and those who fell short of objective number 5, the minimum requirement. Will time-to-pass be a good predictor of success? This is represented in Figure \ref{fig:boxplot.pass}, that shows a boxplot of the number of days to pass an objective (from submission) for those who failed the course (FALSE) and those who passed (TRUE). Median differs, as shown, in 3 days, and the difference is statistically significant (p-value < 0.001), so this metric is a good candidate for being an early indicator of success. However, this is an average over all objectives and over all the class, with objectives with more submissions weighing more. It is also an average over all courses, with path-dependent differences between courses (because it will depend on the student that submits first, and how they help the rest of the student with reviews). We show the boxplot for the different courses in Figure \ref{fig:boxplot.course}, taking into account only students who have passed. In this case, the difference between courses 21-22 and 23-24 is not statistically significant, but the difference between 22-23 and the other two is (p-value < 0.001).
 
-<<boxplot.course, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Boxplot of the difference between the time of submission and the time of approval for every objective, grouped by course.">>=
+<<boxplot.course, message=FALSE, echo=FALSE, warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Week of submission, colored by objective number.">>=
 ggplot(entregas.data[entregas.data$Aprobado==TRUE,], aes(x=as.factor(Curso), y=Days.to.Superacion, fill=as.factor(Curso))) + geom_boxplot(notch = T) + labs(x="Pass", y="Days to approval",fill="Course") + theme_bw()
 @
 
