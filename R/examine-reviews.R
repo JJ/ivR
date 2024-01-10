@@ -15,5 +15,9 @@ for (nick in names(reviews)) {
                                                      numberOfPrs=length(reviewedPRs[[nick]])))
 }
 
+all.reviews.df <- all.reviews.df[ all.reviews.df$name != "JJ" & all.reviews.df$name !="Gdakgdak22",]
 
+all.reviews.df$notaReviews <- ifelse(all.reviews.df$numberOfReviews > 14, 2, all.reviews.df$numberOfReviews/7)
+
+write( toJSON(all.reviews.df), file="../reviews-con-nota.json")
 
