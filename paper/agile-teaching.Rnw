@@ -240,15 +240,16 @@ Research question 2 can be answered by looking at the {\em reaction time} in ear
 
 The answer to RQ3 can be seen mainly in Figures \ref{fig:bars.period}, \ref{fig:weekday.submissions} and \ref{fig:weekday.pass}, that show that weekly classes have a clear impact on submission, as well as passes, and also weeks without classes showing overall lower numbers of submissions. This proves that agile teaching, with frequent interactions with the {\em client} (= student), and using data to assess and address specific needs, can be used to improve individual student, as well as class performance.
 
-This analytics system, which was deployed from the first year (with small variations), allowed us to make different interventions, not all of them successful. To avoid the high dropout rate in the first objectives, we started a hackathon in the first week of class of 22-23. Unfortunately, this intervention did not achieve its objective, and that was clearly seen in the analytics of the first weeks. However, starting a hackathon to pass objectives 2 and 3 had a limited success, and helped some students to get back on track. The first-week hackathon was not repeated, and in the first days of this course 23-24 we introduced another gamification experience, that will be described elsewhere in this conference; this achieved its short-term objectives, as the analytics show, and apparently some long-term objectives too.
+This analytics system, which was deployed from the first year (with small variations), allowed us to make different interventions, not all of them successful. To avoid the high dropout rate in the first objectives, we started a hackathon in the first week of class of 22-23. Unfortunately, this intervention did not succeed, and that was clearly reflected in the analytics. Starting a hackathon to pass objectives 2 and 3 did have a limited success, and helped some students to get back on track. The first-week hackathon was not repeated, and in the first days of this course 23-24 we introduced another gamification experience; this achieved its short-term objectives, as the analytics show, and apparently some long-term objectives too.
 
-In general we can conclude that an agile mindset of serving the customer and adapting specific class circumstances, as shown by the learning analytics and its comparison, will boost student success and efficient acquisition of engineering best practices and skills. Besides, the learning analytics system is totally independent of the platform that is used for assessing student's submissions. As long as the submission time and when it is passed is known with precision, the same measurements can be applied; these measures can be downloaded from a LMS or simply noted in a spreadsheet.
+In general we can conclude that an agile mindset of serving the customer (the student) and adapting to specific class circumstances, as revealed by the learning analytics and its comparison, will boost student success and efficient acquisition of engineering best practices and skills. Besides, the learning analytics system is totally independent of the platform that is used for assessing student's submissions. As long as the submission time and when it is passed is known with precision, the same measurements can be applied; these measures can be downloaded from a LMS or simply noted in a spreadsheet.
+
+Since every class is going to be different, in-class measurements such as the time the student needs from submission to objective success as a measurement of {\em client satisfaction} is an actionable diagnostic that can help teachers apply individual-level or collective measures to improve learning outcomes.
+
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib}
 
-
 \end{document}
 \endinput
-%%
-%% End of file `sample-sigconf.tex'.
+
