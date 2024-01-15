@@ -129,7 +129,7 @@ Next we will choose metrics and analyze the kind of insights we can obtain from 
 \section{Results}
 \label{sec:results}
 
-A general description of the three courses over which we have been using this methodology are probably in order. We show general data about every course in Table \ref{tab:courses}.
+Some basic numbers of the three courses over which we have been using this methodology is shown in Table \ref{tab:courses}.
 
 \begin{table}
 \caption{General data about the three courses\label{tab:courses}}
@@ -138,7 +138,7 @@ A general description of the three courses over which we have been using this me
 Course & 2021-22 & 2022-23 & 2023-24\footnote{At the time of writing, these results are provisional} \\
 Students & 51 & 48 & 40 \\
 \% no-shows & 37.25\% & 66.66\% & 27\% \\
-\% passed ordinary &  39.21\% & 20.83\% & 48\% \\
+\% passed ordinary &  39.21\% & 20.83\% & 52\% \\
 \% passed extraordinary & 23.53\% & 12.5\% & N/A \\
 \% total passed & 62.74\% & 33.33\% & N/A \\
 \hline
