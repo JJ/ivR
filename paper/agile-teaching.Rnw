@@ -241,7 +241,7 @@ This analytics system, which was deployed from the first year (with small variat
 
 In general we can conclude that an agile mindset of serving the customer (the student) and adapting to specific class circumstances, as revealed by the learning analytics and its comparison, will boost student success and efficient acquisition of engineering best practices and skills. Besides, the learning analytics system is totally independent of the platform that is used for assessing student's submissions. As long as the submission time and when it is passed is known with precision, the same measurements can be applied; these measures can be downloaded from a LMS or simply noted in a spreadsheet.
 
-Since every class is going to be different, in-class measurements such as the time the student needs from submission to objective success as a measurement of {\em client satisfaction} is an actionable diagnostic that can help teachers apply individual-level or collective measures to improve learning outcomes.
+Since every class is going to be different, in-class measurements such as the time the student needs from submission to objective success as a measurement of {\em client satisfaction} is an actionable diagnostic that can help teachers apply individual-level or collective measures to improve learning outcomes in an agile way.
 
 
 \bibliographystyle{ACM-Reference-Format}

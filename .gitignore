@@ -26,5 +26,7 @@ auto/
 *.pdf
 *.synctex.gz
 *.bbl
-
+*.aux
+*.blg
+*.out
 
