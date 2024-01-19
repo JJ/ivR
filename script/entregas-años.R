@@ -92,6 +92,8 @@ ggplot(todas.correcciones, aes(x=Correccion.Semana, y=entregas, color=curso)) + 
 ggplot(todas.correcciones, aes(x=curso,y=superacion))+ geom_boxplot( notch=T)
 ggplot(todas.correcciones, aes(x=curso,y=superacion))+ geom_violin()
 
+todas.correcciones %>% group_by(curso,Objetivo) %>% summarise(Entregados=n()) -> entregas.por.curso
+ggplot( entregas.por.curso, aes(x=Objetivo,y=Entregados,group=curso,color=curso))+geom_line()
 summary(correcciones.2324$superacion)
 summary(correcciones.hasta.hoy.2122$superacion)
 summary(correcciones.hasta.hoy.2223$superacion)
