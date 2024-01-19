@@ -90,6 +90,8 @@ todas.correcciones <- rbind( todas.correcciones, correcciones.2324)
 ggplot(todas.correcciones, aes(x=Correccion.Semana, y=entregas, color=curso)) + geom_line() + geom_point(colour=1+todas.correcciones$Objetivo)
 
 ggplot(todas.correcciones, aes(x=curso,y=superacion))+ geom_boxplot( notch=T)
+ggplot(todas.correcciones, aes(x=curso,y=superacion))+ geom_violin()
+
 summary(correcciones.2324$superacion)
 summary(correcciones.hasta.hoy.2122$superacion)
 summary(correcciones.hasta.hoy.2223$superacion)
