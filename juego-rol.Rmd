@@ -2,7 +2,9 @@
 title: "Juegos de rol para design thinking en enseñanza basada en proyecto"
 author: "JJ Merelo"
 date: "`r Sys.Date()`"
-output: word_document
+output:
+  pdf_document: default
+  word_document: default
 bibliography: rpg.bib
 abstract: La enseñanza basada en proyecto se debe basar en aprender las diferentes
   metodologías aplicables en diferentes fases del desarrollo del mismo. En la fase
@@ -56,15 +58,7 @@ Ese efecto, sin embargo, se tiene que medir en el alcance individual de los obje
 
 Sin duda, esto abre una serie de vías para trabajo futuro. El principal problema, desde el punto de vista de la asignatura, es qué hacer con las personas cuyo problema formulado no ha superado el juego; aunque se hizo una segunda ronda, los números de las personas que no lo pasaron parecen coincidir con los que no han superado por el momento el objetivo. Un segundo problema es que en el momento que el problema, esté validado o no, se evalúa por parte del profesor, si no es válido no está claro que se puedan aplicar los principios de *design thinking* o el estudiante no tiene claro cómo hacerlo. Sería conveniente tratar de enfocar el juego de forma que esa fase de empatía la pudiera aplicar en iteraciones sucesivas, sin necesidad de otra persona o de hacerlo varias veces en clase, con los inconvenientes que ello puede causar; si no ha tenido éxito la primera vez, repetir el juego puede ser un poco frustrante. Añadir una fase de "ideación", quizás opcional, como es habitual en *design thinking*, podría ayudar con todo ello, y se mantendría dentro del marco de un juego de rol.
 
-También convendría evaluar los resultados a más largo plazo, y cómo influye en el resultado final alcanzado por el estudiante. Evidentemente, dado que la experiencia se ha hecho este curso, esto queda como trabajo futuro.
-
-
-
-
-
-
-
-
+También convendría evaluar los resultados a más largo plazo, y cómo influye en el resultado final alcanzado por el estudiante. Esto se hará una vez se vean los resultados a final de curso. Provisionalmente, sólo una persona de las que no participó en el juego de rol ha aprobado, y la mayoría de los que participaron también han aprobado, llevando el porcentaje de aprobados a más del 50% en convocatoria ordinaria, comparado con aproximadamente un 33% entre las dos convocatorias en el curso anterior. Aunque esto se debe a una combinación de circunstancias, no cabe duda que el uso de este juego de rol ha contribuido, aunque sea en pequeña medida, a ese resultado
 
 
 
