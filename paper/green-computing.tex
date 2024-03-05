@@ -105,8 +105,7 @@ would, then, would be as follows:\begin{itemize}
   help the student to understand how the workload exercises different parts of
   the hardware, and why it does so.
 \item {\bf Understanding how the workload spends energy}: software profiling,
-  methodologies and tools for energy profiling (PowerMeter, pinpoint
-  \cite{9307947}, hardware meters). This will help the student identify
+  methodologies and tools for energy profiling (PowerMeter, pinpoint, hardware meters). This will help the student identify
   bottlenecks from the point of view of performance as well as energy
   consumption; also find out how this consumption scales with workload size.
 \item {\bf Refactor for reduction of energy footprint}: once the bottlenecks
@@ -116,12 +115,17 @@ would, then, would be as follows:\begin{itemize}
   work on specific computing units, choosing the programming language toolchain
   that reduces energy consumption (such as the compiler or interpreter) or
   configuring it, change
-  in data structures used to store and process data, leveraging of
-  multi-threading or symmetric multiprocessing capabilities, and, in general,
-  understanding how software design can help achieve reduced-energy
-  applications.
+  in data structures used to store and process data or leveraging of
+  multi-threading or symmetric multiprocessing capabilities.
 \end{itemize}
-  
+
+Since most of these items require hands-on experience, we have decided to use
+active learning methodogies, organizing the students in groups and
+making them develop a project from scratch where they will first measure energy
+consumption and then minimize it. The grade can be tied to the
+reduction achieved. This way, putting the best practices in green computing
+to use, the students will be able to learn the skills and commit them to muscle
+memory so that they can be deployed in the future when needed.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../energy.bib,../dev.bib}
