@@ -93,6 +93,36 @@ includes it as part of the Systems Resource Management subject matter. This
 again shows the inter-disciplinar content that needs to be considered even if
 the focus is on software engineering.
 
+The final objective would be to get the student to understand how choices of
+hardware and software platform from the ground up will affect the environmental
+impact of the workload that is going to be created or refactored and which best
+practices need to be involved to reduce that impact. The syllabus proposed
+would, then, would be as follows:\begin{itemize}
+\item {\bf Understanding the hardware}: Computing units (CPU, GPU, memory) and their energy profiles. Energy-wise
+  heterogeneous architectures. Energy consumption sensors and
+  standard APIs to get measurements from them (e.g. RAPL). Interfaces to the
+  computing power configuration and administration system (e.g. ACPI). This will
+  help the student to understand how the workload exercises different parts of
+  the hardware, and why it does so.
+\item {\bf Understanding how the workload spends energy}: software profiling,
+  methodologies and tools for energy profiling (PowerMeter, pinpoint
+  \cite{9307947}, hardware meters). This will help the student identify
+  bottlenecks from the point of view of performance as well as energy
+  consumption; also find out how this consumption scales with workload size.
+\item {\bf Refactor for reduction of energy footprint}: once the bottlenecks
+  have been indentified and specific benchmarks developed to measure the energy
+  footprint, the student needs to work across the board to reduce the footprint:
+  choosing the computing platform where possible, configuring the application to
+  work on specific computing units, choosing the programming language toolchain
+  that reduces energy consumption (such as the compiler or interpreter) or
+  configuring it, change
+  in data structures used to store and process data, leveraging of
+  multi-threading or symmetric multiprocessing capabilities, and, in general,
+  understanding how software design can help achieve reduced-energy
+  applications.
+\end{itemize}
+  
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../energy.bib,../dev.bib}
 
