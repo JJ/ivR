@@ -16,25 +16,18 @@
 
 \title{Formative evaluation and learning analytics for agile teaching}
 
-% \author{JJ Merelo-Guervós}
-% \email{jmerelo@ugr.es}
-% \orcid{0000-0002-1385-9741}
-% \affiliation{%
-%   \institution{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada}
-%   \city{Granada}
-%   \country{Spain}
-% }
-%
-\author{A. U. Thor}
-\email{thorau@univ.edu}
-\orcid{0000-000}
+\author{JJ Merelo-Guervós}
+\email{jmerelo@ugr.es}
+\orcid{0000-0002-1385-9741}
 \affiliation{%
-  \institution{Department of XYZ, Edu. U.}
-  \city{A City}
-  \country{A Country}
+  \institution{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada}
+  \city{Granada}
+  \country{Spain}
 }
 
-\renewcommand{\shortauthors}{A. U. Thor}
+
+
+\renewcommand{\shortauthors}{J. J. Merelo}
 
 \begin{abstract}
 The agile manifesto provides a framework for software development in which customer comes first. Here we will describe a teaching experience based on agile principles that puts students at the center of a strategy that, through the use of fit learning analytics, is able to optimize the potential of a class and its individual students. We used project-based learning and formative evaluation as agile teaching best practices, evaluating student progress based on learning objectives submitted and evaluated asynchronously. The time when every objective is submitted and the time taken to pass it are the essential data points that will be leveraged to evaluate class progress, and the impact of specific measures taken to improve it, in-class or from one course to the next. Measures taken through three years with the same methodology prove that agile teaching can work, but it needs measurements for diagnosis and subsequent interventions to reach its full potential.
@@ -121,8 +114,7 @@ In our country universitary system and for this subject, classes and evaluations
 \item The {\em extraordinary evaluation period}, which takes place up to 3 weeks after the ordinary evaluation period.
 \end{itemize}
 
-Whoever passes the minimum number of objectives during the ordinary period is evaluated during that period; if that is not the case, students can continue submitting the rest of their objectives up to the end of the extraordinary evaluation period. Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}. After the course is over, student GitHub nicks are anonymized with a one-way hash so that privacy is preserved\footnote{Even if students are warned to use whatever GitHub nick they want, including an anonymous, class-only one. The only thing needed for the teacher is to be able to clearly identify which student corresponds to every nick}. These are publicly available at \url{hidden.u.rl}.
-%\url{https://github.com/JJ/ivR}.
+Whoever passes the minimum number of objectives during the ordinary period is evaluated during that period; if that is not the case, students can continue submitting the rest of their objectives up to the end of the extraordinary evaluation period. Data has been collected in this way for three consecutive school years: 2021-22, 2022-23 and 2023-24\footnote{Incomplete at the time of this writing}. After the course is over, student GitHub nicks are anonymized with a one-way hash so that privacy is preserved\footnote{Even if students are warned to use whatever GitHub nick they want, including an anonymous, class-only one. The only thing needed for the teacher is to be able to clearly identify which student corresponds to every nick}. These are publicly available at \url{https://github.com/JJ/ivR}.
 
 Next we will choose metrics and analyze the kind of insights we can obtain from them, and how they can be used to improve learning outcomes.
 
