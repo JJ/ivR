@@ -1,62 +1,32 @@
-\documentclass[sigconf]{acmart}
-
-\AtBeginDocument{%
-  \providecommand\BibTeX{{%
-    Bib\TeX}}}
-
-\setcopyright{acmlicensed}
-\copyrightyear{2024}
-\acmYear{2024}
-\acmDOI{XXXXXXX.XXXXXXX}
-
-\acmConference[ITICSE'24]{ITICSE'24}{June 03--05,  2018}{Milan, IT}
-\acmISBN{978-1-4503-XXXX-X/18/06}
-
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
 \begin{document}
 
 \title{Formative evaluation and learning analytics for agile teaching}
 
 \author{JJ Merelo-Guervós}
-\email{jmerelo@ugr.es}
-\orcid{0000-0002-1385-9741}
-\affiliation{%
-  \institution{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada}
-  \city{Granada}
-  \country{Spain}
-}
 
-
-
-\renewcommand{\shortauthors}{J. J. Merelo}
+\maketitle
 
 \begin{abstract}
 The agile manifesto provides a framework for software development in which customer comes first. Here we will describe a teaching experience based on agile principles that puts students at the center of a strategy that, through the use of fit learning analytics, is able to optimize the potential of a class and its individual students. We used project-based learning and formative evaluation as agile teaching best practices, evaluating student progress based on learning objectives submitted and evaluated asynchronously. The time when every objective is submitted and the time taken to pass it are the essential data points that will be leveraged to evaluate class progress, and the impact of specific measures taken to improve it, in-class or from one course to the next. Measures taken through three years with the same methodology prove that agile teaching can work, but it needs measurements for diagnosis and subsequent interventions to reach its full potential.
 
 \end{abstract}
 
-\begin{CCSXML}
-<ccs2012>
-   <concept>
-       <concept_id>10011007.10011074.10011081.10011082.10011083</concept_id>
-       <concept_desc>Software and its engineering~Agile software development</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
- </ccs2012>
-\end{CCSXML}
+\begin{IEEEkeywords}
+Software engineering, agile methodologies
+\end{IEEEkeywords}
 
-\ccsdesc[500]{Software and its engineering~Agile software development}
-
-
-%%
-%% Keywords. The author(s) should pick words that accurately describe
-%% the work being presented. Separate the keywords with commas.
-\keywords{Software engineering, agile methodologies}
-
-%\received{20 February 2007}
-%\received[revised]{12 March 2009}
-%\received[accepted]{5 June 2009}
-
-\maketitle
 
 \section{Introduction}
 
@@ -234,7 +204,7 @@ In general we can conclude that an agile mindset of serving the customer (the st
 Since every class is going to be different, in-class measurements such as the time the student needs from submission to objective success as a measurement of {\em product quality} is an actionable diagnostic that can help teachers apply individual-level or collective measures to improve learning outcomes in an agile way.
 
 
-\bibliographystyle{ACM-Reference-Format}
+\bibliographystyle{IEEEtran}
 \bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib,../formative-evaluation.bib}
 
 \end{document}
