@@ -97,12 +97,12 @@ Some basic numbers of the three courses over which we have been using this metho
 \caption{General data about the three courses\label{tab:courses}}
 \begin{tabular}{|l|c|c|c|}
 \hline
-Course & 2021-22 & 2022-23 & 2023-24\footnote{At the time of writing, these results are provisional} \\
+Course & 2021-22 & 2022-23 & 2023-24 \\
 Students & 51 & 48 & 40 \\
-\% no-shows & 37.25\% & 66.66\% & 27\% \\
-\% passed ordinary &  39.21\% & 20.83\% & 52\% \\
-\% passed extraordinary & 23.53\% & 12.5\% & N/A \\
-\% total passed & 62.74\% & 33.33\% & N/A \\
+\% no-shows & 37.25\% & 66.66\% & 42.5\% \\
+\% passed ordinary &  39.21\% & 20.83\% & 52.5\% \\
+\% passed extraordinary & 23.53\% & 12.5\% & 5\% \\
+\% total passed & 62.74\% & 33.33\% & 57.5\% \\
 \hline
 
 \end{tabular}
