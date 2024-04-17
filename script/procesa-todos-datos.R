@@ -1,12 +1,11 @@
 library(tibble)
-library(ggplot2)
 library(parsedate)
 library(dplyr)
 
 inicio <- as_tibble( data.frame( Curso=c("21-22","22-23","23-24"),
                                  Inicio=c(as.Date("2021-09-13"),
                                           as.Date("2022-09-12"),
-                                          as.Date("2023-09-11")
+                                          as.Date("2023-09-14")
                                           )
                                  )
 )
