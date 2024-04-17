@@ -24,7 +24,7 @@ The agile manifesto provides a framework for software development in which custo
 \end{abstract}
 
 \begin{IEEEkeywords}
-Software engineering, agile methodologies
+Software engineering, agile methodologies, specifications learning, project-based learning, formative evaluation, learning analytics
 \end{IEEEkeywords}
 
 
