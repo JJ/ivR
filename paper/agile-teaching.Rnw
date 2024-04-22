@@ -38,9 +38,14 @@ You can, however, go a bit further and embrace that same agile mindset in all st
 
 Manifestos are never enough either in development or teaching, and agile development encourages the adoption of best practices in every phase of development; but the last part of the manifesto, which talks about continuous improvement, as well as the fact that we are talking about {\em best} practices, would need some way of measuring progress and how adopted practices affect the classroom. This is why we would like to add a new item to the manifesto: {\em learning analytics} \cite{clow2013overview} over anecdotal evidence or end-of-class failure/success rates.
 
-Within this agile mindset, there are teaching methodologies that fit better; adopting these best practices is the first step towards agile teaching. We will focus on two of them that fit well with each other: project-based learning gives the student autonomy (which is one of the items in the manifesto) through the development of a project across one or several subjects \cite{krajcik2006project}; formative evaluation \cite{tessmer1994formative} also fits the autonomous learning part of the manifesto, but also focuses on learning objectives, since it pursues helping the student through continuous feedback on their submitted work (that advances the project mentioned above). This feedback helps continuous improvement of the project they are working with, which is other of the items in the manifesto. Finally, {\em flipped learning} \cite{otero2018flipped}, that turns classrooms into working, and not student-listening-to-lectures spaces, is another best practices that blends well with the two mentioned above.
+Within this agile mindset, there are teaching methodologies that fit better, and which are better suited for student-centered learning \cite{wright2011student}; adopting these best practices is the first step towards agile teaching. Along our teaching experience, we are uncovering better ways of teaching by doing it and helping students learn. Through this work we have come to value\begin{itemize}
+\item Flipped learning \cite{karabulut2018systematic} over traditional lecture-based learning. Flipped learning {\em flips} the concept of class and classroom, making the classroom a space for student-centered, autonomous learning, with the teacher providing material and guidance. However, this concept by itself does not constrain the kind of material the teacher will provide or how this will be sequencer or organized. We need additional best practices in this area, like the ones below.
+\item Project-based learning \cite{krajcik2006project,7274311} over traditional lecture-based learning. It gives the student autonomy (which is one of the items in the above mentioned manifesto) through the development of a project across one or several subjects, as opposed to being the receptors of an one-way flow of information.
 
-% We need to take and explain choices here, or maybe later.
+\item formative evaluation \cite{tessmer1994formative} also fits the autonomous learning part of the manifesto, but also focuses on learning objectives, since it pursues helping the student through continuous feedback on their submitted work (that advances the project mentioned above). This feedback helps continuous improvement of the project they are working with, which is other of the items in the manifesto. Finally, {\em flipped learning} \cite{otero2018flipped}, that turns classrooms into working, and not student-listening-to-lectures spaces, is another best practices that blends well with the two mentioned above.
+\end{itemize}
+
+
 
 In this paper we will describe the experience carried out in the last three school years in a 4th year (7th semester) subject in the Computer Science degree at the University of Granada, Spain;
 the subject deals with Cloud Computing,
@@ -205,7 +210,7 @@ Since every class is going to be different, in-class measurements such as the ti
 
 
 \bibliographystyle{IEEEtran}
-\bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib,../formative-evaluation.bib}
+\bibliography{../rpg.bib,../dev.bib, ../agile.bib,../learning-analytics.bib,../pbl.bib,../formative-evaluation.bib, ../student-centered-learning.bib}
 
 \end{document}
 \endinput
