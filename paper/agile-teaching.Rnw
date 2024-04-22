@@ -129,7 +129,7 @@ In the second case, there might be a small delay between the moment the objectiv
 In order to be able to normalize and compare different courses, dates are counted from the day the course starts.
 Raw data is shown in Figure \ref{fig:initial}.
 %
-<<initial, echo=FALSE,warning=FALSE, fig.height=4, fig.pos="h!tb", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing)." >>=
+<<initial, echo=FALSE,warning=FALSE, fig.env="figure*", fig.pos="h!tb", fig.cap="Segment plot showing the number of days from the beginning of the course when objectives (indicated by color) have been submitted, with the segment end indicating when they have been approved. From bottom to top, this has been done for course 2021-22, 22-23 and 23-24 (still ongoing)." >>=
 library(ggplot2)
 load("../data/entregas-data.rda")
 # sort entregas.data by Curso and Entrega.Days
