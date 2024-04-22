@@ -12,14 +12,14 @@
 \usepackage{cite}
 \begin{document}
 
-\title{Formative evaluation and learning analytics for agile teaching}
+\title{Teaching agile, agile teaching: applying and monitoring best teaching practices in software engineering education}
 
 \author{JJ Merelo-Guervós}
 
 \maketitle
 
 \begin{abstract}
-The agile manifesto provides a framework for software development in which customer comes first. Here we will describe a teaching experience based on agile principles that puts students at the center of a strategy that, through the use of fit learning analytics, is able to optimize the potential of a class and its individual students. We used project-based learning and formative evaluation as agile teaching best practices, evaluating student progress based on learning objectives submitted and evaluated asynchronously. The time when every objective is submitted and the time taken to pass it are the essential data points that will be leveraged to evaluate class progress, and the impact of specific measures taken to improve it, in-class or from one course to the next. Measures taken through three years with the same methodology prove that agile teaching can work, but it needs measurements for diagnosis and subsequent interventions to reach its full potential.
+The agile manifesto provides a series of principles for software development in which customer comes first; student-centered education has produced a series of methodologies and best practices where student comes first. In the case of software development, we also have a framework in which the quality of the product can be measured, and a series of methodologies that help product managers take informed decisions on specific methodologies or best practices to apply. Through our 3-year experience with a software engineering class, we will show how we have used learning analytics to create a framework out of initially non-related teaching practices, and how metrics gathered give us information on the quality of the learning process and the effect of methodologies used, as well as leverage for agile adaptation of course design for the following class.
 
 \end{abstract}
 
