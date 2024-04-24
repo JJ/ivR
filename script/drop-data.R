@@ -18,7 +18,7 @@ objetivo.semana <- as_tibble(rbind(drop.data.21.22,drop.data.22.23,drop.data.23.
 objetivo.semana$Max.Objetivo <- as.factor(objetivo.semana$Max.Objetivo)
 objetivo.semana$Estudiante <- NULL
 
-ggplot(objetivo.semana, aes(x=Max.Objetivo,y=Entrega.Semana,color=Curso))+geom_point()+theme_economist()+ylim(0,25)
+ggplot(objetivo.semana, aes(x=Max.Objetivo,y=Entrega.Semana,color=Curso))+geom_jitter(width = 0.25)+theme_economist()+ylim(0,25)
 
 
 objetivo.semana %>% group_by(Max.Objetivo) %>% summarise(n = n()) %>% mutate(freq = n / sum(n)) %>% mutate( accumulated.frequency = cumsum(freq)) -> drop.objetivo
