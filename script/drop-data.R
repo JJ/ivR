@@ -3,7 +3,7 @@ library(ggplot2)
 library(ggthemes)
 
 drop.data <- function(entregas){
-  entregas %>% group_by(Estudiante) %>% dplyr::filter( Max.Objetivo == Objetivo) %>% dplyr::summarize(Max.Objetivo=Max.Objetivo,Entrega.Semana = Entrega.Semana, Curso=curso) -> objetivo.semana
+  entregas %>% group_by(Estudiante) %>% dplyr::filter( Max.Objetivo == Objetivo) %>% dplyr::summarize(Max.Objetivo=Max.Objetivo,Entrega.Semana = Entrega.Semana, Curso=curso,Superacion=superacion) -> objetivo.semana
   return(objetivo.semana)
 }
 
@@ -16,9 +16,10 @@ drop.data.23.24 <- drop.data(date.data)
 
 objetivo.semana <- as_tibble(rbind(drop.data.21.22,drop.data.22.23,drop.data.23.24))
 objetivo.semana$Max.Objetivo <- as.factor(objetivo.semana$Max.Objetivo)
+objetivo.semana$Superado <- !is.na(objetivo.semana$Superacion)
 objetivo.semana$Estudiante <- NULL
 
-ggplot(objetivo.semana, aes(x=Max.Objetivo,y=Entrega.Semana,color=Curso))+geom_jitter(width = 0.25)+theme_economist()+ylim(0,25)
+ggplot(objetivo.semana, aes(x=Max.Objetivo,y=Entrega.Semana,color=Curso,shape=Superado))+geom_jitter(size=3,width = 0.25,alpha=0.75)+theme_economist()+ylim(0,25)
 
 
 objetivo.semana %>% group_by(Max.Objetivo) %>% summarise(n = n()) %>% mutate(freq = n / sum(n)) %>% mutate( accumulated.frequency = cumsum(freq)) -> drop.objetivo
