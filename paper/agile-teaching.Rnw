@@ -106,7 +106,8 @@ Some basic numbers of the three courses over which we have been using this metho
 \hline
 Course & 2021-22 & 2022-23 & 2023-24 \\
 Students & 51 & 48 & 40 \\
-\% no-shows & 37.25\% & 66.66\% & 42.5\% \\
+\% no-shows & 5.88 & 2.08 & 12.5 \\
+\% not reached min. objective & 31.37 & 64.58 & 30 \\
 \% passed ordinary &  39.21\% & 20.83\% & 52.5\% \\
 \% passed extraordinary & 23.53\% & 12.5\% & 5\% \\
 \% total passed & 62.74\% & 33.33\% & 57.5\% \\
