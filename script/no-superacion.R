@@ -3,8 +3,7 @@ library(ggplot2)
 library(ggthemes)
 
 superacion.tasa <- function(entregas){
-  # Percentage of objectives where superacion = NA
-  entregas %>% group_by(Objetivo) %>% summarize(n = n(), tasa.superacion = 1-sum(is.na(superacion))/n) -> tasa.superacion
+  entregas %>% group_by(Objetivo) %>% summarize(n = n(), no.superados=sum(is.na(superacion)), tasa.superacion = 1-no.superados/n ) -> tasa.superacion
   return(tasa.superacion)
 }
 
@@ -22,6 +21,8 @@ tasas.curso <- as_tibble(rbind(tasa.21.22,tasa.22.23,tasa.23.24))
 tasas.curso$Objetivo <- as.factor(tasas.curso$Objetivo)
 
 ggplot(tasas.curso, aes(x=Objetivo,y=tasa.superacion,group=Curso, color=Curso))+geom_point()+geom_line()+theme_economist()+ylim(0,1)
+
+ggplot(tasas.curso, aes(x=Objetivo,y=no.superados, color=Curso,group=Curso))+geom_point()+geom_line()+theme_economist()
 
 
 
