@@ -24,6 +24,8 @@ ggplot(tasas.curso, aes(x=Objetivo,y=tasa.superacion,group=Curso, color=Curso))+
 
 ggplot(tasas.curso, aes(x=Objetivo,y=no.superados, color=Curso,group=Curso))+geom_point()+geom_line()+theme_economist()
 
+# compute autocorrelation of no.superados for every Curso
 
-
-
+tasas.curso %>% group_by(Curso) %>% do(data.frame(acf=acf(.$no.superados,plot=FALSE)$acf[2])) %>% ungroup() -> acf.curso.lag1
+tasas.curso %>% group_by(Curso) %>% do(data.frame(acf=acf(.$no.superados,plot=FALSE)$acf[3])) %>% ungroup() -> acf.curso.lag2
+tasas.curso %>% group_by(Curso) %>% do(data.frame(acf=acf(.$no.superados,plot=FALSE)$acf[4])) %>% ungroup() -> acf.curso.lag3
