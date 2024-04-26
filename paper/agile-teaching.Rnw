@@ -52,9 +52,9 @@ the subject deals with Cloud Computing,
 so the project needs to be working towards the deployment of an application of that kind. We will explain how these practices have been effectively implemented, how they fit together, and how we can measure their effectivity and obtain data that can be used to improve the learning experience using learning analytics.
 
 Using experimental data, we will try to answer the following research questions:\begin{itemize}
-\item {\bf RQ1:} Is the effectivity of adopted practices revealed in the collected data?
+\item {\bf RQ1:} Is the effectivity of the implementation of adopted practices revealed in the collected data?
 \item {\bf RQ2:} Are there early indicators or class success or failure and can we use them to improve the learning experience?
-\item {\bf RQ3:} Can analytics help us define a measure of successful learning experience?
+\item {\bf RQ3:} Can learning analytics help us define a measure of successful learning experience?
 \end{itemize}
 
 The rest of the paper is organized as follows: next we will present the state of the art in learning analytics applied to evaluative formation and flipped learning. The class setup, as well as how data is collected will be presented in Section \ref{sec:setup}. The results of the analysis will be presented in Section \ref{sec:results} along with the answers to the research questions. Finally we will draw some conclusions in Section \ref{sec:conclusions}.
