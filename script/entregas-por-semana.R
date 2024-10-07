@@ -9,9 +9,16 @@ all.data.aprobados %>% group_by(Objetivo) %>% summarize(porcentaje=scales::perce
 
 for(i in 1:15){
   print(paste("Semana", i))
-  tabla.dias.entregas.semana <- tabla.dias.entregas %>% filter(entrega.semana <= i)
+  print( tabla.dias.entregas %>% filter(entrega.semana <= i & entrega.semana >= i-1) )
 
 }
 
+all.data.aprobados %>% group_by(Objetivo) %>% summarize(porcentaje=scales::percent(p),correccion.semana = quantile(Correccion.Semana,p,na.rm=T)) -> tabla.dias.correccion
+
+for(i in 1:15){
+  print(paste("Semana", i))
+  print( tabla.dias.correccion %>% filter(correccion.semana <= i & correccion.semana >= i-1) )
+
+}
 
 
