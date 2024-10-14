@@ -1,7 +1,7 @@
 library(dplyr)
 library(scales)
 
-load("../data/all-data.rda")
+load("data/all-data.rda")
 
 all.data.aprobados <- all.data %>% filter(Aprobado == T)
 p <- c(.5,.75,.9,1)
@@ -20,7 +20,6 @@ for(i in 1:15){
   print( tabla.dias.correccion %>% filter(correccion.semana <= i & correccion.semana >= i-1) )
 
 }
-
 
 library(ggplot2)
 library(ggthemes)
