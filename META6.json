@@ -10,7 +10,8 @@
   "auth": "github:JJ",
   "depends": [
     "Text::CSV",
-    "Digest::MD5"
+    "Digest::MD5",
+    "Git::File::History"
   ],
   "provides": {},
   "resources": [],
