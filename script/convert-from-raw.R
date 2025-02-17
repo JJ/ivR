@@ -3,9 +3,9 @@
 library(parsedate)
 
 args = commandArgs(trailingOnly=TRUE)
-data.file = "data-raw/fechas-entrega-2023-24.csv"
-fecha.inicial = "2023-09-14T00:00:00+02:00"
-sufijo.fichero = "23-24"
+data.file = "data-raw/fechas-entrega-2024-25.csv"
+fecha.inicial = "2024-09-16T00:00:00+02:00"
+sufijo.fichero = "24-25"
 
 if (length(args)>=1) {
   data.file = args[1]
