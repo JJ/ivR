@@ -24,3 +24,4 @@ for(i in 1:15){
 library(ggplot2)
 library(ggthemes)
 ggplot(all.data[all.data$Objetivo==0,], aes(x=Correccion.Semana,y=Max.Objetivo))+geom_point()+geom_smooth(method="lm")+theme_economist()+ylab("Objetivo")+xlab("Entrega Semana")+ggtitle("Objetivo en función de la entrega")+xlim(0,6)
+
