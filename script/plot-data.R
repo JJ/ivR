@@ -37,3 +37,4 @@ objetivo.6 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percen
 
 objetivo.7 <- all.data[ all.data$Max.Objetivo == 7,]
 objetivo.7 %>% group_by(Objetivo) %>% dplyr::summarize(porcentaje=scales::percent(p),entregas = quantile(entrega.Dias,p))
+
