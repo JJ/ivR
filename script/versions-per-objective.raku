@@ -18,8 +18,9 @@ for @history -> %commit {
     }
 
     if $! {
-        default {say "Error in commit %commit<commit>"; next };
+        say "Error in commit %commit<commit>"; next ;
     }
+
     for %version-file.kv -> $user, $version {
         next unless $version;
         my $version-v = Version.new( $version );
